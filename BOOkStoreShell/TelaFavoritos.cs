@@ -25,19 +25,21 @@ namespace BOOkStoreShell
 
         }
 
-        private void btnFavoritos_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            TelaFavoritos frm = new TelaFavoritos();
-
-
-            frm.Show();
-        }
+       
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
             TelaPerfilUsuario frm = new TelaPerfilUsuario();
+
+
+            frm.Show();
+        }
+
+        private void btnCarrinho_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TelaCarrinho frm = new TelaCarrinho();
 
 
             frm.Show();

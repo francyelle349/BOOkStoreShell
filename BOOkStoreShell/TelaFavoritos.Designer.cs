@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btnPerfil = new System.Windows.Forms.Button();
-            this.btnFavoritos = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnCarrinho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +47,6 @@
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
-            // 
-            // btnFavoritos
-            // 
-            this.btnFavoritos.Location = new System.Drawing.Point(1101, 18);
-            this.btnFavoritos.Name = "btnFavoritos";
-            this.btnFavoritos.Size = new System.Drawing.Size(62, 23);
-            this.btnFavoritos.TabIndex = 33;
-            this.btnFavoritos.Text = "Favoritos";
-            this.btnFavoritos.UseVisualStyleBackColor = true;
-            this.btnFavoritos.Click += new System.EventHandler(this.btnFavoritos_Click);
             // 
             // btnAdicionar
             // 
@@ -103,13 +93,23 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // btnCarrinho
+            // 
+            this.btnCarrinho.Location = new System.Drawing.Point(1097, 18);
+            this.btnCarrinho.Name = "btnCarrinho";
+            this.btnCarrinho.Size = new System.Drawing.Size(62, 23);
+            this.btnCarrinho.TabIndex = 35;
+            this.btnCarrinho.Text = "Carrinho";
+            this.btnCarrinho.UseVisualStyleBackColor = true;
+            this.btnCarrinho.Click += new System.EventHandler(this.btnCarrinho_Click);
+            // 
             // TelaFavoritos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 681);
+            this.Controls.Add(this.btnCarrinho);
             this.Controls.Add(this.btnPerfil);
-            this.Controls.Add(this.btnFavoritos);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.dataGridView1);
@@ -125,11 +125,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnPerfil;
-        private System.Windows.Forms.Button btnFavoritos;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnCarrinho;
     }
 }
