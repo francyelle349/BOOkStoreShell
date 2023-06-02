@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.lblGenero = new System.Windows.Forms.Label();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.lblPreco = new System.Windows.Forms.Label();
@@ -48,16 +47,6 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 12);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnVoltar.TabIndex = 54;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // lblGenero
             // 
@@ -213,13 +202,12 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
-            // TelaGerenteCadastrarLivro
+            // TelaGerenteAdicionarLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 681);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lblGenero);
             this.Controls.Add(this.txtGenero);
             this.Controls.Add(this.lblPreco);
@@ -236,8 +224,8 @@
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.pictureBoxCapa);
-            this.Name = "TelaGerenteCadastrarLivro";
-            this.Text = "TelaGerenteCadastrarLivro";
+            this.Name = "TelaGerenteAdicionarLivro";
+            this.Text = "TelaGerenteAdicionarLivro";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -245,8 +233,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblGenero;
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Label lblPreco;
