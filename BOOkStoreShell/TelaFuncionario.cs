@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using View;
 
 namespace BOOkStoreShell
 {
@@ -20,7 +14,7 @@ namespace BOOkStoreShell
         private void btnPesquisarLivro_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TelaPesquisaFuncionario frm = new TelaPesquisaFuncionario();
+            TelaFuncionarioEstoque frm = new TelaFuncionarioEstoque();
 
 
             frm.Show();
@@ -29,7 +23,7 @@ namespace BOOkStoreShell
         private void btnCadastrarLivro_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CadastrarLivroFuncionario frm = new CadastrarLivroFuncionario();
+            TelaFuncionarioAddLivro frm = new TelaFuncionarioAddLivro();
 
 
             frm.Show();
@@ -38,7 +32,7 @@ namespace BOOkStoreShell
         private void btnPerfilFuncionario_Click(object sender, EventArgs e)
         {
             this.Hide();
-           TelaPerfilFuncionario frm = new TelaPerfilFuncionario();
+            TelaPerfilFuncionario frm = new TelaPerfilFuncionario();
 
 
             frm.Show();

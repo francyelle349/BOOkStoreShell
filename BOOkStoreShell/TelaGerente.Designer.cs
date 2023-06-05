@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerente));
             this.btnLivro = new System.Windows.Forms.Button();
             this.btnFuncionario = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
-            this.btnRelatorios = new System.Windows.Forms.Button();
-            this.dataGridViewDinheiroArrecado = new System.Windows.Forms.DataGridView();
-            this.dataGridViewQuantidadeVendas = new System.Windows.Forms.DataGridView();
             this.lblDinheiroArrecado = new System.Windows.Forms.Label();
             this.lblQuantidadeVendas = new System.Windows.Forms.Label();
-            this.btnUsuarioGerente = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDinheiroArrecado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantidadeVendas)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLivro
             // 
-            this.btnLivro.Location = new System.Drawing.Point(72, 106);
+            this.btnLivro.Location = new System.Drawing.Point(698, 21);
+            this.btnLivro.Margin = new System.Windows.Forms.Padding(4);
             this.btnLivro.Name = "btnLivro";
-            this.btnLivro.Size = new System.Drawing.Size(105, 33);
+            this.btnLivro.Size = new System.Drawing.Size(84, 38);
             this.btnLivro.TabIndex = 1;
             this.btnLivro.Text = "Livro";
             this.btnLivro.UseVisualStyleBackColor = true;
@@ -55,118 +56,129 @@
             // 
             // btnFuncionario
             // 
-            this.btnFuncionario.Location = new System.Drawing.Point(72, 170);
+            this.btnFuncionario.Location = new System.Drawing.Point(843, 27);
+            this.btnFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(105, 33);
+            this.btnFuncionario.Size = new System.Drawing.Size(105, 34);
             this.btnFuncionario.TabIndex = 2;
             this.btnFuncionario.Text = "Funcionário";
             this.btnFuncionario.UseVisualStyleBackColor = true;
             this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
             // 
-            // btnUsuario
-            // 
-            this.btnUsuario.Location = new System.Drawing.Point(72, 237);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(105, 33);
-            this.btnUsuario.TabIndex = 3;
-            this.btnUsuario.Text = "Usuário";
-            this.btnUsuario.UseVisualStyleBackColor = true;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
-            // 
             // btnEstoque
             // 
-            this.btnEstoque.Location = new System.Drawing.Point(72, 302);
+            this.btnEstoque.Location = new System.Drawing.Point(1000, 26);
+            this.btnEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstoque.Name = "btnEstoque";
-            this.btnEstoque.Size = new System.Drawing.Size(105, 33);
+            this.btnEstoque.Size = new System.Drawing.Size(107, 35);
             this.btnEstoque.TabIndex = 4;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = true;
             this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
             // 
-            // btnRelatorios
-            // 
-            this.btnRelatorios.Location = new System.Drawing.Point(72, 367);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(105, 33);
-            this.btnRelatorios.TabIndex = 5;
-            this.btnRelatorios.Text = "Relatorios";
-            this.btnRelatorios.UseVisualStyleBackColor = true;
-            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
-            // 
-            // dataGridViewDinheiroArrecado
-            // 
-            this.dataGridViewDinheiroArrecado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDinheiroArrecado.Location = new System.Drawing.Point(261, 106);
-            this.dataGridViewDinheiroArrecado.Name = "dataGridViewDinheiroArrecado";
-            this.dataGridViewDinheiroArrecado.Size = new System.Drawing.Size(516, 336);
-            this.dataGridViewDinheiroArrecado.TabIndex = 6;
-            // 
-            // dataGridViewQuantidadeVendas
-            // 
-            this.dataGridViewQuantidadeVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewQuantidadeVendas.Location = new System.Drawing.Point(828, 106);
-            this.dataGridViewQuantidadeVendas.Name = "dataGridViewQuantidadeVendas";
-            this.dataGridViewQuantidadeVendas.Size = new System.Drawing.Size(516, 336);
-            this.dataGridViewQuantidadeVendas.TabIndex = 7;
-            // 
             // lblDinheiroArrecado
             // 
             this.lblDinheiroArrecado.AutoSize = true;
-            this.lblDinheiroArrecado.Location = new System.Drawing.Point(258, 70);
+            this.lblDinheiroArrecado.Location = new System.Drawing.Point(116, 146);
+            this.lblDinheiroArrecado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDinheiroArrecado.Name = "lblDinheiroArrecado";
-            this.lblDinheiroArrecado.Size = new System.Drawing.Size(92, 13);
+            this.lblDinheiroArrecado.Size = new System.Drawing.Size(116, 16);
             this.lblDinheiroArrecado.TabIndex = 8;
             this.lblDinheiroArrecado.Text = "Dinheiro Arrecado";
             // 
             // lblQuantidadeVendas
             // 
             this.lblQuantidadeVendas.AutoSize = true;
-            this.lblQuantidadeVendas.Location = new System.Drawing.Point(834, 70);
+            this.lblQuantidadeVendas.Location = new System.Drawing.Point(116, 326);
+            this.lblQuantidadeVendas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantidadeVendas.Name = "lblQuantidadeVendas";
-            this.lblQuantidadeVendas.Size = new System.Drawing.Size(116, 13);
+            this.lblQuantidadeVendas.Size = new System.Drawing.Size(146, 16);
             this.lblQuantidadeVendas.TabIndex = 9;
             this.lblQuantidadeVendas.Text = "Quantidade de Vendas";
             // 
-            // btnUsuarioGerente
-            // 
-            this.btnUsuarioGerente.Location = new System.Drawing.Point(1269, 21);
-            this.btnUsuarioGerente.Name = "btnUsuarioGerente";
-            this.btnUsuarioGerente.Size = new System.Drawing.Size(75, 23);
-            this.btnUsuarioGerente.TabIndex = 18;
-            this.btnUsuarioGerente.Text = "Usuário";
-            this.btnUsuarioGerente.UseVisualStyleBackColor = true;
-            // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 21);
+            this.btnVoltar.Location = new System.Drawing.Point(1172, 26);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.Size = new System.Drawing.Size(52, 28);
             this.btnVoltar.TabIndex = 19;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1268, 678);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(116, 528);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 16);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Quantidade de Livros";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label2.Location = new System.Drawing.Point(581, 146);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(255, 39);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Lista de vendas";
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(1086, 218);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(43, 22);
+            this.btnPesquisar.TabIndex = 24;
+            this.btnPesquisar.Text = "->";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // txtPesquisar
+            // 
+            this.txtPesquisar.Location = new System.Drawing.Point(584, 218);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(494, 22);
+            this.txtPesquisar.TabIndex = 23;
+            // 
             // TelaGerente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 681);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.txtPesquisar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnUsuarioGerente);
             this.Controls.Add(this.lblQuantidadeVendas);
             this.Controls.Add(this.lblDinheiroArrecado);
-            this.Controls.Add(this.dataGridViewQuantidadeVendas);
-            this.Controls.Add(this.dataGridViewDinheiroArrecado);
-            this.Controls.Add(this.btnRelatorios);
             this.Controls.Add(this.btnEstoque);
-            this.Controls.Add(this.btnUsuario);
             this.Controls.Add(this.btnFuncionario);
             this.Controls.Add(this.btnLivro);
+            this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaGerente";
-            this.Text = "TelaGerente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gerente";
             this.Load += new System.EventHandler(this.TelaGerente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDinheiroArrecado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuantidadeVendas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,14 +188,14 @@
 
         private System.Windows.Forms.Button btnLivro;
         private System.Windows.Forms.Button btnFuncionario;
-        private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnEstoque;
-        private System.Windows.Forms.Button btnRelatorios;
-        private System.Windows.Forms.DataGridView dataGridViewDinheiroArrecado;
-        private System.Windows.Forms.DataGridView dataGridViewQuantidadeVendas;
         private System.Windows.Forms.Label lblDinheiroArrecado;
         private System.Windows.Forms.Label lblQuantidadeVendas;
-        private System.Windows.Forms.Button btnUsuarioGerente;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisar;
     }
 }

@@ -28,45 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaMenuCliente));
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.dataGridViewMenu = new System.Windows.Forms.DataGridView();
             this.btnCarrinho = new System.Windows.Forms.Button();
             this.btnFavoritos = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAddCarrinho = new System.Windows.Forms.Button();
+            this.btnAddFavoritos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(768, 180);
+            this.btnPesquisar.Location = new System.Drawing.Point(800, 30);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.Size = new System.Drawing.Size(31, 28);
             this.btnPesquisar.TabIndex = 14;
-            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.Text = "->";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(187, 183);
+            this.txtPesquisar.Location = new System.Drawing.Point(437, 33);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(563, 20);
+            this.txtPesquisar.Size = new System.Drawing.Size(355, 22);
             this.txtPesquisar.TabIndex = 13;
             // 
             // dataGridViewMenu
             // 
             this.dataGridViewMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMenu.Location = new System.Drawing.Point(140, 223);
+            this.dataGridViewMenu.Location = new System.Drawing.Point(112, 203);
+            this.dataGridViewMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewMenu.Name = "dataGridViewMenu";
-            this.dataGridViewMenu.Size = new System.Drawing.Size(747, 379);
+            this.dataGridViewMenu.RowHeadersWidth = 51;
+            this.dataGridViewMenu.Size = new System.Drawing.Size(1023, 435);
             this.dataGridViewMenu.TabIndex = 12;
             // 
             // btnCarrinho
             // 
-            this.btnCarrinho.Location = new System.Drawing.Point(968, 24);
+            this.btnCarrinho.Location = new System.Drawing.Point(935, 27);
+            this.btnCarrinho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCarrinho.Name = "btnCarrinho";
-            this.btnCarrinho.Size = new System.Drawing.Size(75, 23);
+            this.btnCarrinho.Size = new System.Drawing.Size(78, 28);
             this.btnCarrinho.TabIndex = 15;
             this.btnCarrinho.Text = "Carrinho";
             this.btnCarrinho.UseVisualStyleBackColor = true;
@@ -74,9 +83,10 @@
             // 
             // btnFavoritos
             // 
-            this.btnFavoritos.Location = new System.Drawing.Point(1064, 24);
+            this.btnFavoritos.Location = new System.Drawing.Point(1044, 27);
+            this.btnFavoritos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFavoritos.Name = "btnFavoritos";
-            this.btnFavoritos.Size = new System.Drawing.Size(75, 23);
+            this.btnFavoritos.Size = new System.Drawing.Size(78, 28);
             this.btnFavoritos.TabIndex = 16;
             this.btnFavoritos.Text = "Favoritos";
             this.btnFavoritos.UseVisualStyleBackColor = true;
@@ -84,40 +94,65 @@
             // 
             // btnUsuario
             // 
-            this.btnUsuario.Location = new System.Drawing.Point(1161, 24);
+            this.btnUsuario.Location = new System.Drawing.Point(1153, 27);
+            this.btnUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnUsuario.Size = new System.Drawing.Size(78, 28);
             this.btnUsuario.TabIndex = 17;
             this.btnUsuario.Text = "Usuário";
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
-            // btnVoltar
+            // pictureBox1
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(31, 24);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnVoltar.TabIndex = 18;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1264, 683);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnAddCarrinho
+            // 
+            this.btnAddCarrinho.Location = new System.Drawing.Point(112, 130);
+            this.btnAddCarrinho.Name = "btnAddCarrinho";
+            this.btnAddCarrinho.Size = new System.Drawing.Size(107, 23);
+            this.btnAddCarrinho.TabIndex = 19;
+            this.btnAddCarrinho.Text = "AddCarrinho";
+            this.btnAddCarrinho.UseVisualStyleBackColor = true;
+            // 
+            // btnAddFavoritos
+            // 
+            this.btnAddFavoritos.Location = new System.Drawing.Point(260, 130);
+            this.btnAddFavoritos.Name = "btnAddFavoritos";
+            this.btnAddFavoritos.Size = new System.Drawing.Size(98, 23);
+            this.btnAddFavoritos.TabIndex = 20;
+            this.btnAddFavoritos.Text = "AddFavoritos";
+            this.btnAddFavoritos.UseVisualStyleBackColor = true;
             // 
             // TelaMenuCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 741);
-            this.Controls.Add(this.btnVoltar);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.btnAddFavoritos);
+            this.Controls.Add(this.btnAddCarrinho);
             this.Controls.Add(this.btnUsuario);
             this.Controls.Add(this.btnFavoritos);
             this.Controls.Add(this.btnCarrinho);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.dataGridViewMenu);
+            this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaMenuCliente";
-            this.Text = "TelaMenuCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BOOkstore";
             this.Load += new System.EventHandler(this.TelaMenuCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +166,8 @@
         private System.Windows.Forms.Button btnCarrinho;
         private System.Windows.Forms.Button btnFavoritos;
         private System.Windows.Forms.Button btnUsuario;
-        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAddCarrinho;
+        private System.Windows.Forms.Button btnAddFavoritos;
     }
 }

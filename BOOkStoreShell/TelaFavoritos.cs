@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BOOkStoreShell
@@ -25,7 +18,7 @@ namespace BOOkStoreShell
 
         }
 
-       
+
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
@@ -43,6 +36,11 @@ namespace BOOkStoreShell
 
 
             frm.Show();
+        }
+
+        private void TelaFavoritos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
