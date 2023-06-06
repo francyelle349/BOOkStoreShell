@@ -96,7 +96,7 @@ namespace BOOkStoreShell
 
         private void pictureBoxC_Click_1(object sender, EventArgs e)
         {
-            // Avançar para a próxima imagem
+            // Avançar para a próxima imagemm
             currentIndex++;
             if (currentIndex >= imagePaths.Count)
                 currentIndex = 0;
