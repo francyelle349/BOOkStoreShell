@@ -16,8 +16,8 @@ namespace BOOkStoreShell
 
         public TelaMenu()
         {
-            InitializeComponent();
-            InitializeImages();
+           InitializeComponent();
+           InitializeImages();
 
         }
 
@@ -26,9 +26,9 @@ namespace BOOkStoreShell
             // Caminhos das imagens
             imagePaths = new List<string>
             {
-                "C:\\Users\\Amanda\\Desktop\\BOOkstore\\img\\img1.png", // caminho da imagem
-                "C:\\Users\\Amanda\\Desktop\\BOOkstore\\img\\img2.png",
-                "C:\\Users\\Amanda\\Desktop\\BOOkstore\\img\\img3.png"
+                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img1.png", // caminho da imagem
+                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img2.png",
+                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img3.png"
             };
 
             // Configurar o PictureBox
@@ -96,7 +96,7 @@ namespace BOOkStoreShell
 
         private void pictureBoxC_Click_1(object sender, EventArgs e)
         {
-            // Avançar para a próxima imagemm
+            // Avançar para a próxima imagemmedededededededede
             currentIndex++;
             if (currentIndex >= imagePaths.Count)
                 currentIndex = 0;

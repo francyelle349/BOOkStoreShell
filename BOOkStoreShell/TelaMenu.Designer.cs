@@ -47,10 +47,9 @@
             // 
             this.btnGerente.FlatAppearance.BorderSize = 0;
             this.btnGerente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnGerente.Location = new System.Drawing.Point(1160, 27);
-            this.btnGerente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGerente.Location = new System.Drawing.Point(870, 22);
             this.btnGerente.Name = "btnGerente";
-            this.btnGerente.Size = new System.Drawing.Size(77, 28);
+            this.btnGerente.Size = new System.Drawing.Size(58, 23);
             this.btnGerente.TabIndex = 11;
             this.btnGerente.Text = "Gerente";
             this.btnGerente.UseVisualStyleBackColor = true;
@@ -60,10 +59,9 @@
             // 
             this.btnFuncionario.FlatAppearance.BorderSize = 0;
             this.btnFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.btnFuncionario.Location = new System.Drawing.Point(1046, 29);
-            this.btnFuncionario.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFuncionario.Location = new System.Drawing.Point(784, 24);
             this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(82, 28);
+            this.btnFuncionario.Size = new System.Drawing.Size(62, 23);
             this.btnFuncionario.TabIndex = 10;
             this.btnFuncionario.Text = "Funcionario";
             this.btnFuncionario.UseVisualStyleBackColor = true;
@@ -73,10 +71,10 @@
             // 
             this.btnCliente.FlatAppearance.BorderSize = 0;
             this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCliente.Location = new System.Drawing.Point(939, 30);
+            this.btnCliente.Location = new System.Drawing.Point(704, 24);
             this.btnCliente.Margin = new System.Windows.Forms.Padding(0);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(76, 28);
+            this.btnCliente.Size = new System.Drawing.Size(57, 23);
             this.btnCliente.TabIndex = 9;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
@@ -84,10 +82,9 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(794, 33);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPesquisar.Location = new System.Drawing.Point(596, 27);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(43, 22);
+            this.btnPesquisar.Size = new System.Drawing.Size(32, 18);
             this.btnPesquisar.TabIndex = 8;
             this.btnPesquisar.Text = "->";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -95,19 +92,19 @@
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(432, 33);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPesquisar.Location = new System.Drawing.Point(324, 27);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(354, 22);
+            this.txtPesquisar.Size = new System.Drawing.Size(266, 20);
             this.txtPesquisar.TabIndex = 7;
             this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::View.Properties.Resources.Homepage;
             this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1268, 677);
+            this.pictureBox1.Size = new System.Drawing.Size(951, 550);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -115,9 +112,10 @@
             // pictureBoxC
             // 
             this.pictureBoxC.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBoxC.Location = new System.Drawing.Point(112, 118);
+            this.pictureBoxC.Location = new System.Drawing.Point(84, 96);
+            this.pictureBoxC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxC.Name = "pictureBoxC";
-            this.pictureBoxC.Size = new System.Drawing.Size(1037, 101);
+            this.pictureBoxC.Size = new System.Drawing.Size(778, 82);
             this.pictureBoxC.TabIndex = 13;
             this.pictureBoxC.TabStop = false;
             this.pictureBoxC.Click += new System.EventHandler(this.pictureBoxC_Click_1);
@@ -131,19 +129,20 @@
             this.dgvListaLivros.BackgroundColor = System.Drawing.Color.Silver;
             this.dgvListaLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaLivros.GridColor = System.Drawing.Color.Gray;
-            this.dgvListaLivros.Location = new System.Drawing.Point(112, 258);
+            this.dgvListaLivros.Location = new System.Drawing.Point(84, 210);
+            this.dgvListaLivros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvListaLivros.Name = "dgvListaLivros";
             this.dgvListaLivros.RowHeadersWidth = 51;
             this.dgvListaLivros.RowTemplate.Height = 24;
-            this.dgvListaLivros.Size = new System.Drawing.Size(1037, 375);
+            this.dgvListaLivros.Size = new System.Drawing.Size(778, 305);
             this.dgvListaLivros.TabIndex = 14;
             // 
-            // TelaDeMenu
+            // TelaMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.dgvListaLivros);
             this.Controls.Add(this.pictureBoxC);
             this.Controls.Add(this.btnGerente);
@@ -153,8 +152,7 @@
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "TelaDeMenu";
+            this.Name = "TelaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BOOkstore";
             this.Load += new System.EventHandler(this.TelaDeMenu_Load);
