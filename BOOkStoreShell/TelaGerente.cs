@@ -1,22 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BOOkStoreShell
 {
     public partial class TelaGerente : Form
     {
-        
+
         public TelaGerente()
         {
             InitializeComponent();
-           
+
         }
 
         private void TelaGerente_Load(object sender, EventArgs e)
@@ -35,7 +28,7 @@ namespace BOOkStoreShell
         private void btnLivro_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TelaGerenteLivro frm = new TelaGerenteLivro();
+            TelaGerenteAddLivro frm = new TelaGerenteAddLivro();
 
 
             frm.Show();
@@ -53,11 +46,6 @@ namespace BOOkStoreShell
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TelaGerenteUsuario frm = new TelaGerenteUsuario();
-
-
-            frm.Show();
         }
 
         private void btnEstoque_Click(object sender, EventArgs e)
@@ -69,11 +57,7 @@ namespace BOOkStoreShell
 
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TelaGerenteRelatorio frm = new TelaGerenteRelatorio();
 
-
-            frm.Show();
         }
     }
 }

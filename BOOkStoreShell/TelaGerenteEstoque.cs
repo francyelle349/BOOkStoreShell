@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BOOkStoreShell
@@ -27,7 +20,7 @@ namespace BOOkStoreShell
         private void btnLivro_Click(object sender, EventArgs e)
         {
             this.Close();
-            var frm = new TelaGerenteLivro();
+            var frm = new TelaGerenteAddLivro();
             frm.Show();
         }
 
@@ -35,15 +28,6 @@ namespace BOOkStoreShell
         {
 
         }
-
-
-
-
-
-
-
-
-
         private void btnFuncionario_Click_1(object sender, EventArgs e)
         {
 
@@ -57,35 +41,53 @@ namespace BOOkStoreShell
         private void btnUsuario_Click_1(object sender, EventArgs e)
         {
 
-            this.Hide();
-            TelaGerenteUsuario frm = new TelaGerenteUsuario();
 
-
-            frm.Show();
         }
 
 
         private void btnRelatorios_Click_1(object sender, EventArgs e)
         {
 
-            this.Hide();
-            TelaGerenteRelatorio frm = new TelaGerenteRelatorio();
 
-
-            frm.Show();
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TelaGerenteAdicionarEstoque frm = new TelaGerenteAdicionarEstoque();
 
+        }
 
-            frm.ShowDialog();
+        private void label5_Click(object sender, EventArgs e)
+        {
 
-            frm = null;
+        }
 
-            this.Show();
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewEstoque_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textQtdAddLivro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

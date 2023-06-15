@@ -28,19 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginGerente));
             this.btnVoltarGerente = new System.Windows.Forms.Button();
             this.btnLoginGerente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtSenhaGerente = new System.Windows.Forms.TextBox();
-            this.txtEmailGerente = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltarGerente
             // 
-            this.btnVoltarGerente.Location = new System.Drawing.Point(22, 29);
+            this.btnVoltarGerente.Location = new System.Drawing.Point(1166, 29);
+            this.btnVoltarGerente.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarGerente.Name = "btnVoltarGerente";
-            this.btnVoltarGerente.Size = new System.Drawing.Size(62, 23);
+            this.btnVoltarGerente.Size = new System.Drawing.Size(83, 28);
             this.btnVoltarGerente.TabIndex = 17;
             this.btnVoltarGerente.Text = "Voltar";
             this.btnVoltarGerente.UseVisualStyleBackColor = true;
@@ -48,9 +54,10 @@
             // 
             // btnLoginGerente
             // 
-            this.btnLoginGerente.Location = new System.Drawing.Point(348, 286);
+            this.btnLoginGerente.Location = new System.Drawing.Point(570, 592);
+            this.btnLoginGerente.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoginGerente.Name = "btnLoginGerente";
-            this.btnLoginGerente.Size = new System.Drawing.Size(85, 22);
+            this.btnLoginGerente.Size = new System.Drawing.Size(113, 27);
             this.btnLoginGerente.TabIndex = 16;
             this.btnLoginGerente.Text = "Logar";
             this.btnLoginGerente.UseVisualStyleBackColor = true;
@@ -59,48 +66,90 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 233);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(432, 410);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Senha";
+            this.label2.Text = "Senha:";
+            // 
+            // txtSenhaGerente
+            // 
+            this.txtSenhaGerente.Location = new System.Drawing.Point(436, 443);
+            this.txtSenhaGerente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenhaGerente.Name = "txtSenhaGerente";
+            this.txtSenhaGerente.Size = new System.Drawing.Size(384, 22);
+            this.txtSenhaGerente.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-6, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1272, 674);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(230, 182);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(555, 144);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Email";
+            this.label1.Size = new System.Drawing.Size(154, 29);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "BEM-VINDO";
             // 
-            // txtSenhaGerente
+            // label3
             // 
-            this.txtSenhaGerente.Location = new System.Drawing.Point(284, 226);
-            this.txtSenhaGerente.Name = "txtSenhaGerente";
-            this.txtSenhaGerente.Size = new System.Drawing.Size(226, 20);
-            this.txtSenhaGerente.TabIndex = 13;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(565, 366);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 29);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "GERENTE";
             // 
-            // txtEmailGerente
+            // pictureBox2
             // 
-            this.txtEmailGerente.Location = new System.Drawing.Point(284, 179);
-            this.txtEmailGerente.Name = "txtEmailGerente";
-            this.txtEmailGerente.Size = new System.Drawing.Size(226, 20);
-            this.txtEmailGerente.TabIndex = 12;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(540, 176);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // LoginGerente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltarGerente);
             this.Controls.Add(this.btnLoginGerente);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenhaGerente);
-            this.Controls.Add(this.txtEmailGerente);
+            this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginGerente";
-            this.Text = "LoginGerente2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "LoginGerente";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +160,10 @@
         private System.Windows.Forms.Button btnVoltarGerente;
         private System.Windows.Forms.Button btnLoginGerente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSenhaGerente;
-        private System.Windows.Forms.TextBox txtEmailGerente;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

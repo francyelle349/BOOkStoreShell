@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BOOkStoreShell
@@ -17,10 +14,10 @@ namespace BOOkStoreShell
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            TelaDeMenu telaDeMenu = new TelaDeMenu();
+            TelaMenu telaDeMenu = new TelaMenu();
             telaDeMenu.Show();
             Application.Run();
-            
+
         }
     }
 }
