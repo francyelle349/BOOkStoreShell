@@ -8,36 +8,33 @@ namespace BOOkStoreShell
 {
     public partial class TelaMenu : Form
     {
-        //img menu
-        private PictureBox pictureBox;
-        private List<string> imagePaths;
-        private int currentIndex;
-        //
+        
 
         public TelaMenu()
         {
            InitializeComponent();
-           InitializeImages();
 
         }
-
-        public void InitializeImages()
+        
+        
+        private void Pesquisar_Livro()
         {
-            // Caminhos das imagens
-            imagePaths = new List<string>
-            {
-                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img1.png", // caminho da imagem
-                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img2.png",
-                "C:\\Users\\Biel\\Desktop\\BOOkStoreShell-Amandita\\BOOkStoreShell\\Resources\\img3.png"
-            };
+            this.dgvListaLivros.DataSource = Controller.ControllerLivro.Pesquisar(this.txtPesquisar.Text);
+            this.ocultarColunas();
+            
+        }
+        //ocultar as colunas do grid
+        private void ocultarColunas()
+        {
+            this.dgvListaLivros.Columns[0].Visible = false;
 
-            // Configurar o PictureBox
-            pictureBox = new PictureBox();
-            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox.Dock = DockStyle.Fill;
-            pictureBoxC.Image = Image.FromFile(imagePaths[currentIndex]);
-            pictureBox.Click += pictureBoxC_Click;
-            Controls.Add(pictureBox);
+        }
+        //mostrar colunas no grid
+        private void Mostrar()
+        {
+            this.dgvListaLivros.DataSource = Controller.ControllerLivro.Exibir_Livro();
+            this.ocultarColunas();
+
         }
 
         private void pictureBoxC_Click(object sender, EventArgs e)
@@ -67,26 +64,22 @@ namespace BOOkStoreShell
 
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginFuncionario frm = new LoginFuncionario();
-
-
-            frm.Show();
+          
         }
 
         private void TelaDeMenu_Load(object sender, EventArgs e)
         {
-
+            this.Mostrar();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-
+            this.Pesquisar_Livro();
         }
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
-
+            this.Pesquisar_Livro();
         }
 
         private void dataGridViewMenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -96,14 +89,7 @@ namespace BOOkStoreShell
 
         private void pictureBoxC_Click_1(object sender, EventArgs e)
         {
-            // Avançar para a próxima imagemmedededededededede
-            currentIndex++;
-            if (currentIndex >= imagePaths.Count)
-                currentIndex = 0;
-
-            // Atualizar a imagem exibida no PictureBox
-            pictureBoxC.Image = Image.FromFile(imagePaths[currentIndex]);
-
+            
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -112,6 +98,16 @@ namespace BOOkStoreShell
         }
 
         private void flowLayoutPanelExibirMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvListaLivros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

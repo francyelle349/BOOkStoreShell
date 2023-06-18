@@ -33,20 +33,20 @@
             this.btnLoginGerente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSenhaGerente = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltarGerente
             // 
-            this.btnVoltarGerente.Location = new System.Drawing.Point(1166, 29);
+            this.btnVoltarGerente.Location = new System.Drawing.Point(1158, 31);
             this.btnVoltarGerente.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarGerente.Name = "btnVoltarGerente";
-            this.btnVoltarGerente.Size = new System.Drawing.Size(83, 28);
+            this.btnVoltarGerente.Size = new System.Drawing.Size(74, 24);
             this.btnVoltarGerente.TabIndex = 17;
             this.btnVoltarGerente.Text = "Voltar";
             this.btnVoltarGerente.UseVisualStyleBackColor = true;
@@ -84,16 +84,6 @@
             this.txtSenhaGerente.Size = new System.Drawing.Size(384, 22);
             this.txtSenhaGerente.TabIndex = 13;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1272, 674);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -130,6 +120,16 @@
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-6, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1272, 674);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // LoginGerente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,8 +148,9 @@
             this.Name = "LoginGerente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginGerente";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.LoginGerente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
