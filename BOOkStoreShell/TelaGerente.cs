@@ -5,16 +5,21 @@ namespace BOOkStoreShell
 {
     public partial class TelaGerente : Form
     {
-
+        
         public TelaGerente()
         {
             InitializeComponent();
 
         }
-
+        private void Mostrar()
+        {
+            this.dataGridViewVendas.DataSource = Controller.ControllerLivro.Exibir_Livro();
+            lblQtdVendas.Text = "Total de Vendas: " + Convert.ToString(dataGridViewVendas.Rows.Count);
+           
+        }
         private void TelaGerente_Load(object sender, EventArgs e)
         {
-
+            Mostrar();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -28,20 +33,14 @@ namespace BOOkStoreShell
         private void btnLivro_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TelaGerenteAddLivro frm = new TelaGerenteAddLivro();
+            
 
-
-            frm.Show();
 
         }
 
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TelaGerenteFuncionario frm = new TelaGerenteFuncionario();
-
-
-            frm.Show();
+           
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
@@ -51,7 +50,7 @@ namespace BOOkStoreShell
         private void btnEstoque_Click(object sender, EventArgs e)
         {
             this.Close();
-            var frm = new TelaGerenteEstoque();
+            var frm = new TelaEstoque();
             frm.Show();
         }
 

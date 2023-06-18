@@ -29,48 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaGerente));
-            this.btnLivro = new System.Windows.Forms.Button();
-            this.btnFuncionario = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
             this.lblDinheiroArrecado = new System.Windows.Forms.Label();
             this.lblQuantidadeVendas = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDinheiroVendas = new System.Windows.Forms.Label();
+            this.dataGridViewVendas = new System.Windows.Forms.DataGridView();
+            this.lblQtdVendas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLivro
-            // 
-            this.btnLivro.Location = new System.Drawing.Point(698, 21);
-            this.btnLivro.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLivro.Name = "btnLivro";
-            this.btnLivro.Size = new System.Drawing.Size(84, 38);
-            this.btnLivro.TabIndex = 1;
-            this.btnLivro.Text = "Livro";
-            this.btnLivro.UseVisualStyleBackColor = true;
-            this.btnLivro.Click += new System.EventHandler(this.btnLivro_Click);
-            // 
-            // btnFuncionario
-            // 
-            this.btnFuncionario.Location = new System.Drawing.Point(843, 27);
-            this.btnFuncionario.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(105, 34);
-            this.btnFuncionario.TabIndex = 2;
-            this.btnFuncionario.Text = "Funcionário";
-            this.btnFuncionario.UseVisualStyleBackColor = true;
-            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
             // 
             // btnEstoque
             // 
-            this.btnEstoque.Location = new System.Drawing.Point(1000, 26);
+            this.btnEstoque.Location = new System.Drawing.Point(110, 481);
             this.btnEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstoque.Name = "btnEstoque";
-            this.btnEstoque.Size = new System.Drawing.Size(107, 35);
+            this.btnEstoque.Size = new System.Drawing.Size(107, 40);
             this.btnEstoque.TabIndex = 4;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = true;
@@ -98,40 +77,21 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(1172, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(1154, 24);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(52, 28);
+            this.btnVoltar.Size = new System.Drawing.Size(75, 31);
             this.btnVoltar.TabIndex = 19;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1268, 678);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 528);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 16);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Quantidade de Livros";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(581, 146);
+            this.label2.Location = new System.Drawing.Point(755, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(255, 39);
@@ -140,7 +100,7 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(1086, 218);
+            this.btnPesquisar.Location = new System.Drawing.Point(1101, 146);
             this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(43, 22);
@@ -150,27 +110,68 @@
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(584, 218);
+            this.txtPesquisar.Location = new System.Drawing.Point(586, 146);
             this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(494, 22);
+            this.txtPesquisar.Size = new System.Drawing.Size(507, 22);
             this.txtPesquisar.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::View.Properties.Resources.TelaGerente;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1268, 678);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblDinheiroVendas
+            // 
+            this.lblDinheiroVendas.AutoSize = true;
+            this.lblDinheiroVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblDinheiroVendas.Location = new System.Drawing.Point(123, 173);
+            this.lblDinheiroVendas.Name = "lblDinheiroVendas";
+            this.lblDinheiroVendas.Size = new System.Drawing.Size(109, 39);
+            this.lblDinheiroVendas.TabIndex = 25;
+            this.lblDinheiroVendas.Text = "label1";
+            // 
+            // dataGridViewVendas
+            // 
+            this.dataGridViewVendas.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGridViewVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVendas.Location = new System.Drawing.Point(586, 232);
+            this.dataGridViewVendas.Name = "dataGridViewVendas";
+            this.dataGridViewVendas.RowHeadersWidth = 51;
+            this.dataGridViewVendas.RowTemplate.Height = 24;
+            this.dataGridViewVendas.Size = new System.Drawing.Size(558, 395);
+            this.dataGridViewVendas.TabIndex = 27;
+            // 
+            // lblQtdVendas
+            // 
+            this.lblQtdVendas.AutoSize = true;
+            this.lblQtdVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblQtdVendas.Location = new System.Drawing.Point(132, 353);
+            this.lblQtdVendas.Name = "lblQtdVendas";
+            this.lblQtdVendas.Size = new System.Drawing.Size(109, 39);
+            this.lblQtdVendas.TabIndex = 28;
+            this.lblQtdVendas.Text = "label3";
             // 
             // TelaGerente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.lblQtdVendas);
+            this.Controls.Add(this.dataGridViewVendas);
+            this.Controls.Add(this.lblDinheiroVendas);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.lblQuantidadeVendas);
             this.Controls.Add(this.lblDinheiroArrecado);
             this.Controls.Add(this.btnEstoque);
-            this.Controls.Add(this.btnFuncionario);
-            this.Controls.Add(this.btnLivro);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -179,23 +180,23 @@
             this.Text = "Gerente";
             this.Load += new System.EventHandler(this.TelaGerente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnLivro;
-        private System.Windows.Forms.Button btnFuncionario;
         private System.Windows.Forms.Button btnEstoque;
         private System.Windows.Forms.Label lblDinheiroArrecado;
         private System.Windows.Forms.Label lblQuantidadeVendas;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
+        private System.Windows.Forms.Label lblDinheiroVendas;
+        private System.Windows.Forms.DataGridView dataGridViewVendas;
+        private System.Windows.Forms.Label lblQtdVendas;
     }
 }
