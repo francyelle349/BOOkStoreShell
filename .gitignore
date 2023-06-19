@@ -1,4 +1,3 @@
 *.mdf
 /BOOkStoreShell/bin/debug
-/BOOkStoreShell/bin/debug
-
+/BOOkStoreShell/obj/debug
