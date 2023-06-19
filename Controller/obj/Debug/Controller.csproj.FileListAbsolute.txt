@@ -7,3 +7,12 @@ C:\Users\Amanda\Desktop\BOOkstore\Controller\bin\Debug\Model.pdb
 C:\Users\Amanda\Desktop\BOOkstore\Controller\obj\Debug\Controller.csproj.CopyComplete
 C:\Users\Amanda\Desktop\BOOkstore\Controller\obj\Debug\Controller.dll
 C:\Users\Amanda\Desktop\BOOkstore\Controller\obj\Debug\Controller.pdb
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Controller.dll
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Controller.pdb
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Model.dll
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Model.pdb
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.dll
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.pdb

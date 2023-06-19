@@ -31,6 +31,8 @@ namespace Model
             this.senhaCliente = senhaCliente;
         }
 
+ //       public Boolean getLoginCliente ()
+
         
 
         
