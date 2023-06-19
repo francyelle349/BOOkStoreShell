@@ -15,7 +15,7 @@ namespace Controller
 
         public static string cAdd_Livro(string nomeLivro, int genero, int estoque, float precoUnitario)
         {
-            Livro Obj = new Model.Livro();
+            Livro Obj = new Livro();
             Obj.NomeLivro = nomeLivro;
             Obj.Genero = genero;
             Obj.Estoque = estoque;
@@ -27,7 +27,7 @@ namespace Controller
 
         public static string cEditar_Livro(int idLivro, string nomeLivro, int genero, int estoque, float precoUnitario)
         {
-            Livro Obj = new Model.Livro();
+            Livro Obj = new Livro();
             Obj.IdLivro = idLivro;
             Obj.NomeLivro = nomeLivro;
             Obj.Genero = genero;
@@ -41,7 +41,7 @@ namespace Controller
         }
         public static string cDeletar_Estoque(int idLivro)
         {
-            Livro Obj = new Model.Livro();
+            Livro Obj = new Livro();
             Obj.IdLivro = idLivro;
 
 

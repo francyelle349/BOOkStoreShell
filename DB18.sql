@@ -1,5 +1,3 @@
-CREATE DATABASE bookstore;
-USE bookstore;
 /*
 CREATE TABLE autor(
 idAutor INT NOT NULL IDENTITY,
@@ -63,7 +61,7 @@ CONSTRAINT fk_ItemPedido_pedido FOREIGN KEY (idPedido) REFERENCES pedido(idPedid
 */
 
 --criar os procedimentos para os livros
-/*
+
 create proc spmostrar_Livro
 as
 select * from livro
@@ -94,8 +92,8 @@ create proc speditar_livro
 as
 update livro set
 titulo = @titulo,
-precoLivro =@precoLivro,
-estoqueLivro =@estoqueLivro,
+precoLivro = @precoLivro,
+estoqueLivro = @estoqueLivro
 where idLivro = @idLivro
 go
 
@@ -117,6 +115,6 @@ emailFunci VARCHAR(50) NOT NULL,
 senhaFunci VARCHAR(50) NOT NULL,
 CONSTRAINT pk_Funci PRIMARY KEY (idFunci)
 )
-*/
+
 --criar os procedimentos 
 
