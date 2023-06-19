@@ -1,1 +1,3 @@
-.mdf
+*.mdf
+/BOOkStoreShell/bin/debug
+/BOOkStoreShell/obj/debug
