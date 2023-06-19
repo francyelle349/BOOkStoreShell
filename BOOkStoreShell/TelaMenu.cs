@@ -26,7 +26,7 @@ namespace BOOkStoreShell
         //ocultar as colunas do grid
         private void ocultarColunas()
         {
-            this.dgvListaLivros.Columns[0].Visible = false;
+            //this.dgvListaLivros.Columns[0].Visible = false;
 
         }
         //mostrar colunas no grid

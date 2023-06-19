@@ -1,7 +1,2 @@
-,9,testeloi123,96,6600036621094,9,2
-,8,teste4,152,220001220703,6,2
-,5,A estralha,4850,6,1
-,4,Não fale com estranhos,1550,9,1
-,3,Não conte a ninguém,60,4000015258789,3,2
-,2,Bem atrás de você,100,02,15,2
-,1,It A coisa,50,65,2,1
+	3	It a coisa	150,00	22	2	
+	2	adadadadadad	11111,00	13	1	
