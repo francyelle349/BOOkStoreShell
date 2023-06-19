@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-using static Controller.ControllerCliente;
+using Controller;
 
 namespace BOOkStoreShell
 {
@@ -47,20 +48,29 @@ namespace BOOkStoreShell
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
-            string nomeCliente = txtNomeCliente.Text;
-            string emailCliente = txtEmailCliente.Text;
-            string cpfCliente = txtCPFCliente.Text;
-            string telCliente = txtTelefoneCliente.Text;
-            string senhaCliente = txtSenhaCliente.Text;
+            try
+            {
+                if (txtConfirmarSenhaCliente.Text != txtSenhaCliente.Text)
+                {
+                    MessageBox.Show("As senhas informadas não conferem. Por favor, verifique e tente novamente.");
+                } 
+                else if (string.IsNullOrWhiteSpace(txtNomeCliente.Text) || string.IsNullOrWhiteSpace(txtEmailCliente.Text) || string.IsNullOrWhiteSpace(txtCPFCliente.Text) || string.IsNullOrWhiteSpace(txtTelefoneCliente.Text) || string.IsNullOrWhiteSpace(txtSenhaCliente.Text))
+                {
+                    MessageBox.Show("Por favor, preencha todos os campos obrigatórios.");
+                } 
+                else
+                {
+                    new ControllerCliente().CadastrarCliente(txtNomeCliente.Text, txtEmailCliente.Text, txtCPFCliente.Text, txtTelefoneCliente.Text, txtSenhaCliente.Text);
+                    MessageBox.Show("Cadastro realizado com sucesso!", "", MessageBoxButtons.OK);
+                }
+            } catch (SqlException ex)
+            {
+                    MessageBox.Show("Erro ao cadastrar usuário: " + ex.Message.Remove(36));
 
-            Controller.ControllerCliente controller = new Controller.ControllerCliente();
-            controller.CadastrarCliente(nomeCliente, emailCliente, cpfCliente, telCliente, senhaCliente);
-
-            this.Close();
-            var frm = new TelaCadastro();
-            frm.Show();
-
-
+                var frm = new TelaCadastro();
+                frm.Show();
+                this.Close();
+            }
         }
     }
 }

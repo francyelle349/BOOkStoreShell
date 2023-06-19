@@ -64,32 +64,28 @@ namespace Model
             return cliente;
         }
 
-        public Cliente getCadastrarCliente(string nomeCliente, string emailCliente, string cpfCliente, string telCliente, string senhaCliente)
+        public void cadastrarCliente(string nomeCliente, string emailCliente, string cpfCliente, string telCliente, string senhaCliente)
         {
             // Inicia a string de conexão
             SqlConnection SqlCon = new SqlConnection(BD.cn);
-            SqlCommand SqlCmd = new SqlCommand("SELECT nomeCliente, emailCliente, cpfCliente, telCliente, senhaCliente FROM cliente WHERE nomeCliente = @nomeCliente AND emailCliente = @emailCliente AND cpfCliente = @cpfCliente AND telCliente = @telCliente AND senhaCliente = @senhaCliente", SqlCon);
-            SqlCon.Open();
+            SqlCommand SqlCmd = new SqlCommand("INSERT INTO cliente (nomeCliente, emailCliente, cpfCliente, telCliente, senhaCliente) VALUES( @nomeCliente, @emailCliente, @cpfCliente, @telCliente, @senhaCliente)", SqlCon);
             SqlCmd.Parameters.AddWithValue("@nomeCliente", nomeCliente);
             SqlCmd.Parameters.AddWithValue("@emailCliente", emailCliente);
             SqlCmd.Parameters.AddWithValue("@cpfCliente", cpfCliente);
-            SqlCmd.Parameters.AddWithValue("@telefoneCliente", telCliente);
+            SqlCmd.Parameters.AddWithValue("@telCliente", telCliente);
             SqlCmd.Parameters.AddWithValue("@senhaCliente", senhaCliente);
-            Cliente cliente = new Cliente(nomeCliente, emailCliente,cpfCliente,telCliente, senhaCliente);
 
             try
             {
                 SqlCon.Open();
                 SqlCmd.ExecuteNonQuery();
+                SqlCon.Close();
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                // Tratar erros
-                Console.WriteLine(ex.Message);
+                SqlCon.Close();
+                throw ex;
             }
-
-
-            return cliente;
         }
     }
 }
