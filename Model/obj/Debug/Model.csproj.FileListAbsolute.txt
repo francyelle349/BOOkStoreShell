@@ -12,11 +12,3 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.dll
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.pdb
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1.mdf
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\bin\Debug\Database1.mdf
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\bin\Debug\Model.dll
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\bin\Debug\Model.pdb
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\obj\Debug\Model.csproj.AssemblyReference.cache
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\obj\Debug\Model.dll
-C:\Users\hayri\source\repos\BOOkStoreShell\Model\obj\Debug\Model.pdb
