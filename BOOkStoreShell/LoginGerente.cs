@@ -14,7 +14,7 @@ namespace BOOkStoreShell
         private void btnVoltarGerente_Click(object sender, EventArgs e)
         {
             this.Close();
-            var frm = new TelaMenu();
+            var frm = new TelaCadastro();
             frm.Show();
         }
 

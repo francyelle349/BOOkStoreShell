@@ -14,8 +14,8 @@ namespace BOOkStoreShell
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            TelaMenu telaDeMenu = new TelaMenu();
-            telaDeMenu.Show();
+            TelaCadastro telaDeCadastro = new TelaCadastro();
+            telaDeCadastro.Show();
             Application.Run();
 
         }

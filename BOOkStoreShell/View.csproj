@@ -66,11 +66,11 @@
     <Compile Include="TelaCarrinho.Designer.cs">
       <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaMenu.cs">
+    <Compile Include="TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaMenu.Designer.cs">
-      <DependentUpon>TelaMenu.cs</DependentUpon>
+    <Compile Include="TelaCadastro.Designer.cs">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaFavoritos.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="TelaCarrinho.resx">
       <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaMenu.resx">
-      <DependentUpon>TelaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="TelaCadastro.resx">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaFavoritos.resx">
       <DependentUpon>TelaFavoritos.cs</DependentUpon>
@@ -159,6 +159,10 @@
     <ProjectReference Include="..\Controller\Controller.csproj">
       <Project>{6abb877b-e1fa-4f9f-b03a-bbfad1bfaea8}</Project>
       <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{91de74bb-b1bc-49ad-b903-bce8208e733f}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
