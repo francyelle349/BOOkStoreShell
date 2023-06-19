@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using static Controller.ControllerCliente;
 
 namespace BOOkStoreShell
 {
@@ -46,6 +47,19 @@ namespace BOOkStoreShell
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
+            string nomeCliente = txtNomeCliente.Text;
+            string emailCliente = txtEmailCliente.Text;
+            string cpfCliente = txtCPFCliente.Text;
+            string telCliente = txtTelefoneCliente.Text;
+            string senhaCliente = txtSenhaCliente.Text;
+
+            Controller.ControllerCliente controller = new Controller.ControllerCliente();
+            controller.CadastrarCliente(nomeCliente, emailCliente, cpfCliente, telCliente, senhaCliente);
+
+            this.Close();
+            var frm = new TelaCadastro();
+            frm.Show();
+
 
         }
     }

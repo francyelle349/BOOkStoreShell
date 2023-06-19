@@ -49,9 +49,9 @@ namespace BOOkStoreShell
 
         private void btnNaoTemCadastroCliente_Click(object sender, EventArgs e)
         {
-
-
-
+            this.Close();
+            var frm = new TelaCadastro();
+            frm.Show();
         }
     }
 }

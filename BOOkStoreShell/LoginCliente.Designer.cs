@@ -98,6 +98,7 @@
             this.txtSenhaCliente.Name = "txtSenhaCliente";
             this.txtSenhaCliente.Size = new System.Drawing.Size(391, 22);
             this.txtSenhaCliente.TabIndex = 7;
+            this.txtSenhaCliente.UseSystemPasswordChar = true;
             // 
             // txtEmailCliente
             // 

@@ -77,6 +77,17 @@ namespace Model
             SqlCmd.Parameters.AddWithValue("@senhaCliente", senhaCliente);
             Cliente cliente = new Cliente(nomeCliente, emailCliente,cpfCliente,telCliente, senhaCliente);
 
+            try
+            {
+                SqlCon.Open();
+                SqlCmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Tratar erros
+                Console.WriteLine(ex.Message);
+            }
+
 
             return cliente;
         }
