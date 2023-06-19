@@ -71,3 +71,5 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\obj\Debug\View.csp
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\obj\Debug\View.csproj.CopyComplete
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\obj\Debug\View.exe
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\obj\Debug\View.pdb
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\bin\Debug\Database1.mdf
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\BOOkStoreShell\bin\Debug\Database1_log.ldf

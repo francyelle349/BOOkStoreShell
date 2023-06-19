@@ -10,3 +10,5 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.csproj.Asse
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.dll
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.pdb
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1.mdf
+C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf

@@ -17,11 +17,11 @@ namespace Model
         private string senhaCliente;
 
         public Cliente (
-            string nomeCliente,
-            string cpfCliente,
-            string emailCliente,
-            string endereco,
-            string senhaCliente
+            string nomeCliente = "",
+            string cpfCliente = "",
+            string emailCliente = "",
+            string endereco = "",
+            string senhaCliente = ""
             )
         {
             this.nomeCliente = nomeCliente;
@@ -31,7 +31,37 @@ namespace Model
             this.senhaCliente = senhaCliente;
         }
 
- //       public Boolean getLoginCliente ()
+        public string getSenhaCliente ()
+        {
+            return this.senhaCliente;
+        }
+
+        public Cliente getLoginCliente(string email, string senha)
+        {
+            // Inicia a string de conexão
+            SqlConnection SqlCon = new SqlConnection(BD.cn);
+            SqlCommand SqlCmd = new SqlCommand("SELECT email, senha FROM loginData WHERE email = @email AND senha = @senha", SqlCon);
+            SqlCon.Open();
+            SqlCmd.Parameters.AddWithValue("@email", email);
+            SqlCmd.Parameters.AddWithValue("@senha", senha);
+            Cliente cliente = new Cliente("", "", email, "", senha);
+            try
+            {
+                using (SqlDataReader reader = SqlCmd.ExecuteReader())
+                {
+
+                    while (reader.Read())
+                    {
+                        cliente.emailCliente = reader["email"].ToString();
+                        cliente.senhaCliente = reader["senha"].ToString();
+                    }
+                }
+            } catch (Exception)
+            {
+            }
+            SqlCon.Close();
+            return cliente;
+        }
 
         
 
