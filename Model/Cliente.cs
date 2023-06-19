@@ -60,6 +60,7 @@ namespace Model
             {
             }
             SqlCon.Close();
+            // retorna cliente
             return cliente;
         }
 
