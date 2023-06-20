@@ -13,7 +13,7 @@ namespace Controller
         public static bool loginCliente (string emailCliente, string senhaCliente)
         {
             Cliente resultado = new Cliente().getLoginCliente(emailCliente, senhaCliente);
-            if (resultado.emailCliente == emailCliente && resultado.getSenhaCliente() == senhaCliente)
+            if (resultado.emailCliente != emailCliente && resultado.getSenhaCliente() != senhaCliente)
                 return true;
             return false;
         }

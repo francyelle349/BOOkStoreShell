@@ -59,6 +59,7 @@
             // btnEntrarCliente
             // 
             this.btnEntrarCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrarCliente.FlatAppearance.BorderSize = 0;
             this.btnEntrarCliente.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarCliente.ForeColor = System.Drawing.Color.Black;
@@ -152,6 +153,8 @@
             // 
             // btnCadastrarCliente
             // 
+            this.btnCadastrarCliente.BackColor = System.Drawing.Color.White;
+            this.btnCadastrarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.ForeColor = System.Drawing.Color.Black;
             this.btnCadastrarCliente.Location = new System.Drawing.Point(550, 318);
@@ -159,7 +162,7 @@
             this.btnCadastrarCliente.Size = new System.Drawing.Size(109, 35);
             this.btnCadastrarCliente.TabIndex = 41;
             this.btnCadastrarCliente.Text = "Cadastrar";
-            this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnCadastrarCliente.UseVisualStyleBackColor = false;
             this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
             // txtSenhaCliente
@@ -215,7 +218,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::View.Properties.Resources.fundocinza;
-            this.pictureBox2.Location = new System.Drawing.Point(147, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(139, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(703, 271);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
