@@ -174,5 +174,14 @@
   <ItemGroup>
     <None Include="img\TelaGerenteEstoque.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\esqueletos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fundocinza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
