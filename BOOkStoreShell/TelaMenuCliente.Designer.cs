@@ -45,7 +45,7 @@
             // btnPesquisar
             // 
             this.btnPesquisar.Location = new System.Drawing.Point(800, 30);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(31, 28);
             this.btnPesquisar.TabIndex = 14;
@@ -55,7 +55,7 @@
             // txtPesquisar
             // 
             this.txtPesquisar.Location = new System.Drawing.Point(437, 33);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(355, 22);
             this.txtPesquisar.TabIndex = 13;
@@ -63,19 +63,20 @@
             // dataGridViewMenu
             // 
             this.dataGridViewMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMenu.Location = new System.Drawing.Point(112, 203);
-            this.dataGridViewMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewMenu.Location = new System.Drawing.Point(117, 203);
+            this.dataGridViewMenu.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewMenu.Name = "dataGridViewMenu";
             this.dataGridViewMenu.RowHeadersWidth = 51;
-            this.dataGridViewMenu.Size = new System.Drawing.Size(1023, 435);
+            this.dataGridViewMenu.Size = new System.Drawing.Size(1018, 429);
             this.dataGridViewMenu.TabIndex = 12;
             // 
             // btnCarrinho
             // 
-            this.btnCarrinho.Location = new System.Drawing.Point(935, 27);
-            this.btnCarrinho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCarrinho.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrinho.Location = new System.Drawing.Point(926, 22);
+            this.btnCarrinho.Margin = new System.Windows.Forms.Padding(4);
             this.btnCarrinho.Name = "btnCarrinho";
-            this.btnCarrinho.Size = new System.Drawing.Size(78, 28);
+            this.btnCarrinho.Size = new System.Drawing.Size(94, 42);
             this.btnCarrinho.TabIndex = 15;
             this.btnCarrinho.Text = "Carrinho";
             this.btnCarrinho.UseVisualStyleBackColor = true;
@@ -83,10 +84,11 @@
             // 
             // btnFavoritos
             // 
-            this.btnFavoritos.Location = new System.Drawing.Point(1044, 27);
-            this.btnFavoritos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFavoritos.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFavoritos.Location = new System.Drawing.Point(1028, 22);
+            this.btnFavoritos.Margin = new System.Windows.Forms.Padding(4);
             this.btnFavoritos.Name = "btnFavoritos";
-            this.btnFavoritos.Size = new System.Drawing.Size(78, 28);
+            this.btnFavoritos.Size = new System.Drawing.Size(107, 42);
             this.btnFavoritos.TabIndex = 16;
             this.btnFavoritos.Text = "Favoritos";
             this.btnFavoritos.UseVisualStyleBackColor = true;
@@ -94,10 +96,11 @@
             // 
             // btnUsuario
             // 
-            this.btnUsuario.Location = new System.Drawing.Point(1153, 27);
-            this.btnUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUsuario.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.Location = new System.Drawing.Point(1143, 22);
+            this.btnUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(78, 28);
+            this.btnUsuario.Size = new System.Drawing.Size(94, 42);
             this.btnUsuario.TabIndex = 17;
             this.btnUsuario.Text = "Usuário";
             this.btnUsuario.UseVisualStyleBackColor = true;
@@ -115,18 +118,20 @@
             // 
             // btnAddCarrinho
             // 
-            this.btnAddCarrinho.Location = new System.Drawing.Point(112, 130);
+            this.btnAddCarrinho.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCarrinho.Location = new System.Drawing.Point(104, 121);
             this.btnAddCarrinho.Name = "btnAddCarrinho";
-            this.btnAddCarrinho.Size = new System.Drawing.Size(107, 23);
+            this.btnAddCarrinho.Size = new System.Drawing.Size(128, 42);
             this.btnAddCarrinho.TabIndex = 19;
             this.btnAddCarrinho.Text = "AddCarrinho";
             this.btnAddCarrinho.UseVisualStyleBackColor = true;
             // 
             // btnAddFavoritos
             // 
-            this.btnAddFavoritos.Location = new System.Drawing.Point(260, 130);
+            this.btnAddFavoritos.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFavoritos.Location = new System.Drawing.Point(249, 121);
             this.btnAddFavoritos.Name = "btnAddFavoritos";
-            this.btnAddFavoritos.Size = new System.Drawing.Size(98, 23);
+            this.btnAddFavoritos.Size = new System.Drawing.Size(123, 42);
             this.btnAddFavoritos.TabIndex = 20;
             this.btnAddFavoritos.Text = "AddFavoritos";
             this.btnAddFavoritos.UseVisualStyleBackColor = true;
@@ -146,7 +151,7 @@
             this.Controls.Add(this.dataGridViewMenu);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaMenuCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BOOkstore";

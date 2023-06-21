@@ -385,6 +385,11 @@ namespace BOOkStoreShell
         {
 
         }
+
+        private void Lista_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

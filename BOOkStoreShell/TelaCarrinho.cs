@@ -35,5 +35,25 @@ namespace BOOkStoreShell
 
             frm.Show();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TelaCarrinho_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

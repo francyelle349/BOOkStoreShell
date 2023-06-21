@@ -72,11 +72,12 @@ namespace BOOkStoreShell
             pictureBox1.Region = new Region(path);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
+
         }
 
-        private void btnEntrar_Clic(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

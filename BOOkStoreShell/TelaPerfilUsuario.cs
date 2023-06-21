@@ -23,5 +23,10 @@ namespace BOOkStoreShell
             var frm = new LoginCliente();
             frm.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
