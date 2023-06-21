@@ -44,6 +44,9 @@
             this.chkDeletar = new System.Windows.Forms.CheckBox();
             this.Configuração = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtIdLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,9 +65,6 @@
             this.ttMensagem = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Lista.SuspendLayout();
@@ -124,7 +124,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(1161, 34);
+            this.btnVoltar.Location = new System.Drawing.Point(1149, 26);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(63, 21);
@@ -171,7 +171,7 @@
             this.lblTotalLivros.AutoSize = true;
             this.lblTotalLivros.Location = new System.Drawing.Point(621, 44);
             this.lblTotalLivros.Name = "lblTotalLivros";
-            this.lblTotalLivros.Size = new System.Drawing.Size(57, 16);
+            this.lblTotalLivros.Size = new System.Drawing.Size(59, 17);
             this.lblTotalLivros.TabIndex = 60;
             this.lblTotalLivros.Text = "Variavel";
             this.lblTotalLivros.Click += new System.EventHandler(this.lblTotalLivros_Click);
@@ -208,7 +208,7 @@
             this.chkDeletar.AutoSize = true;
             this.chkDeletar.Location = new System.Drawing.Point(20, 94);
             this.chkDeletar.Name = "chkDeletar";
-            this.chkDeletar.Size = new System.Drawing.Size(73, 20);
+            this.chkDeletar.Size = new System.Drawing.Size(76, 21);
             this.chkDeletar.TabIndex = 61;
             this.chkDeletar.Text = "Deletar";
             this.chkDeletar.UseVisualStyleBackColor = true;
@@ -250,6 +250,33 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Livros";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(764, 123);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.TabIndex = 97;
+            this.label5.Text = "2 - Terror";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(764, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "1 - Terror";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(764, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 17);
+            this.label3.TabIndex = 95;
+            this.label3.Text = "Mapa de codigos de genero:";
             // 
             // txtGenero
             // 
@@ -407,33 +434,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 16);
-            this.label3.TabIndex = 95;
-            this.label3.Text = "Mapa de codigos de genero:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(764, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "1 - Terror";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(764, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 16);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "2 - Terror";
             // 
             // TelaEstoque
             // 
