@@ -124,7 +124,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(1149, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(1161, 34);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(63, 21);
@@ -171,7 +171,7 @@
             this.lblTotalLivros.AutoSize = true;
             this.lblTotalLivros.Location = new System.Drawing.Point(621, 44);
             this.lblTotalLivros.Name = "lblTotalLivros";
-            this.lblTotalLivros.Size = new System.Drawing.Size(59, 17);
+            this.lblTotalLivros.Size = new System.Drawing.Size(57, 16);
             this.lblTotalLivros.TabIndex = 60;
             this.lblTotalLivros.Text = "Variavel";
             this.lblTotalLivros.Click += new System.EventHandler(this.lblTotalLivros_Click);
@@ -208,7 +208,7 @@
             this.chkDeletar.AutoSize = true;
             this.chkDeletar.Location = new System.Drawing.Point(20, 94);
             this.chkDeletar.Name = "chkDeletar";
-            this.chkDeletar.Size = new System.Drawing.Size(76, 21);
+            this.chkDeletar.Size = new System.Drawing.Size(73, 20);
             this.chkDeletar.TabIndex = 61;
             this.chkDeletar.Text = "Deletar";
             this.chkDeletar.UseVisualStyleBackColor = true;
@@ -256,11 +256,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(764, 123);
             this.label5.Name = "label5";
-<<<<<<< HEAD
             this.label5.Size = new System.Drawing.Size(61, 16);
-=======
-            this.label5.Size = new System.Drawing.Size(69, 17);
->>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
             this.label5.TabIndex = 97;
             this.label5.Text = "2 - Terror";
             // 
@@ -269,11 +265,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(764, 97);
             this.label4.Name = "label4";
-<<<<<<< HEAD
             this.label4.Size = new System.Drawing.Size(61, 16);
-=======
-            this.label4.Size = new System.Drawing.Size(69, 17);
->>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
             this.label4.TabIndex = 96;
             this.label4.Text = "1 - Terror";
             // 
@@ -282,11 +274,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(764, 60);
             this.label3.Name = "label3";
-<<<<<<< HEAD
             this.label3.Size = new System.Drawing.Size(181, 16);
-=======
-            this.label3.Size = new System.Drawing.Size(189, 17);
->>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
             this.label3.TabIndex = 95;
             this.label3.Text = "Mapa de codigos de genero:";
             // 
