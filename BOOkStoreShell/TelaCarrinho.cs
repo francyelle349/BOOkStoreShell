@@ -35,5 +35,10 @@ namespace BOOkStoreShell
 
             frm.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

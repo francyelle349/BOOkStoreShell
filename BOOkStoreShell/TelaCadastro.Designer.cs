@@ -55,7 +55,7 @@
             this.btnEntrarCliente.BackColor = System.Drawing.Color.Transparent;
             this.btnEntrarCliente.FlatAppearance.BorderSize = 0;
             this.btnEntrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnEntrarCliente.Location = new System.Drawing.Point(1173, 9);
+            this.btnEntrarCliente.Location = new System.Drawing.Point(715, 454);
             this.btnEntrarCliente.Margin = new System.Windows.Forms.Padding(0);
             this.btnEntrarCliente.Name = "btnEntrarCliente";
             this.btnEntrarCliente.Size = new System.Drawing.Size(79, 25);
@@ -76,7 +76,7 @@
             this.lblCPFCliente.AutoSize = true;
             this.lblCPFCliente.Location = new System.Drawing.Point(401, 325);
             this.lblCPFCliente.Name = "lblCPFCliente";
-            this.lblCPFCliente.Size = new System.Drawing.Size(38, 17);
+            this.lblCPFCliente.Size = new System.Drawing.Size(36, 16);
             this.lblCPFCliente.TabIndex = 16;
             this.lblCPFCliente.Text = "CPF:";
             // 
@@ -92,7 +92,7 @@
             this.lblEmailCliente.AutoSize = true;
             this.lblEmailCliente.Location = new System.Drawing.Point(401, 297);
             this.lblEmailCliente.Name = "lblEmailCliente";
-            this.lblEmailCliente.Size = new System.Drawing.Size(51, 17);
+            this.lblEmailCliente.Size = new System.Drawing.Size(48, 16);
             this.lblEmailCliente.TabIndex = 14;
             this.lblEmailCliente.Text = "E-mail:";
             // 
@@ -108,7 +108,7 @@
             this.lblNomeCadastro.AutoSize = true;
             this.lblNomeCadastro.Location = new System.Drawing.Point(401, 269);
             this.lblNomeCadastro.Name = "lblNomeCadastro";
-            this.lblNomeCadastro.Size = new System.Drawing.Size(49, 17);
+            this.lblNomeCadastro.Size = new System.Drawing.Size(47, 16);
             this.lblNomeCadastro.TabIndex = 12;
             this.lblNomeCadastro.Text = "Nome:";
             // 
@@ -125,7 +125,7 @@
             this.lblSenhaCliente.AutoSize = true;
             this.lblSenhaCliente.Location = new System.Drawing.Point(401, 353);
             this.lblSenhaCliente.Name = "lblSenhaCliente";
-            this.lblSenhaCliente.Size = new System.Drawing.Size(53, 17);
+            this.lblSenhaCliente.Size = new System.Drawing.Size(49, 16);
             this.lblSenhaCliente.TabIndex = 20;
             this.lblSenhaCliente.Text = "Senha:";
             // 
@@ -141,7 +141,7 @@
             this.lblTelefoneCliente.AutoSize = true;
             this.lblTelefoneCliente.Location = new System.Drawing.Point(590, 325);
             this.lblTelefoneCliente.Name = "lblTelefoneCliente";
-            this.lblTelefoneCliente.Size = new System.Drawing.Size(68, 17);
+            this.lblTelefoneCliente.Size = new System.Drawing.Size(64, 16);
             this.lblTelefoneCliente.TabIndex = 18;
             this.lblTelefoneCliente.Text = "Telefone:";
             // 
@@ -157,7 +157,7 @@
             this.lblConfirmarSenhaCliente.AutoSize = true;
             this.lblConfirmarSenhaCliente.Location = new System.Drawing.Point(567, 353);
             this.lblConfirmarSenhaCliente.Name = "lblConfirmarSenhaCliente";
-            this.lblConfirmarSenhaCliente.Size = new System.Drawing.Size(118, 17);
+            this.lblConfirmarSenhaCliente.Size = new System.Drawing.Size(109, 16);
             this.lblConfirmarSenhaCliente.TabIndex = 22;
             this.lblConfirmarSenhaCliente.Text = "Confirmar Senha:";
             // 

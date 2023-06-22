@@ -12,27 +12,29 @@ namespace Model
     {
         private int idPedido;
         private string dataPedido;
-        private float valorPedido;
-        private int idCliente;
+        private double valorPedido;
+        private string cpfCliente;
 
+       
+        public int IdPedido { get => idPedido; set => idPedido = value; }
+        public string DataPedido { get => dataPedido; set => dataPedido = value; }
+        public double ValorPedido { get => valorPedido; set => valorPedido = value; }
+        public string CpfCliente { get => cpfCliente; set => cpfCliente = value; }
+        
+        
+        
         public Pedido()
         {
 
         }
-        public Pedido(int idPedido, string dataPedido, float valorPedido, int idCliente)
+
+        public Pedido(int idPedido, string dataPedido, double valorPedido, string cpfCliente)
         {
-            IdPedido = idPedido;
-            DataPedido = dataPedido;
-            ValorPedido = valorPedido;
-            IdCliente = idCliente;
-
+            this.idPedido = idPedido;
+            this.dataPedido = dataPedido;
+            this.valorPedido = valorPedido;
+            this.cpfCliente = cpfCliente;
         }
-
-        public int IdPedido { get => idPedido; set => idPedido = value; }
-        public string DataPedido { get => dataPedido; set => dataPedido = value; }
-        public float ValorPedido { get => valorPedido; set => valorPedido = value; }
-        public int IdCliente { get => idCliente; set => idCliente = value; }
-
 
         public DataTable Exibir_Pedidos()
         {

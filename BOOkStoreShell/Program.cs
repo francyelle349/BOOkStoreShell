@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using View;
 
 namespace BOOkStoreShell
 {
@@ -14,8 +15,8 @@ namespace BOOkStoreShell
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            TelaCadastro telaDeCadastro = new TelaCadastro();
-            telaDeCadastro.Show();
+            TelaMenu telaMenu = new TelaMenu();
+            telaMenu.Show();
             Application.Run();
 
         }

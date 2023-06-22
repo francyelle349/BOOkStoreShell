@@ -41,9 +41,9 @@ namespace BOOkStoreShell
         {
             this.Hide();
 
-            LoginCliente telaMenuCliente = new LoginCliente();
-            
-            telaMenuCliente.Show();
+            LoginCliente LoginCliente = new LoginCliente();
+
+            LoginCliente.Show();
         }
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)

@@ -44,6 +44,9 @@
             this.chkDeletar = new System.Windows.Forms.CheckBox();
             this.Configuração = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtIdLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,9 +65,6 @@
             this.ttMensagem = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Lista.SuspendLayout();
@@ -251,6 +251,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Livros";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(764, 123);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 16);
+            this.label5.TabIndex = 97;
+            this.label5.Text = "2 - Terror";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(764, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.TabIndex = 96;
+            this.label4.Text = "1 - Terror";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(764, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 16);
+            this.label3.TabIndex = 95;
+            this.label3.Text = "Mapa de codigos de genero:";
+            // 
             // txtGenero
             // 
             this.txtGenero.Location = new System.Drawing.Point(124, 99);
@@ -287,6 +314,7 @@
             this.btnCancelar.TabIndex = 91;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnNovo
             // 
@@ -407,33 +435,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 16);
-            this.label3.TabIndex = 95;
-            this.label3.Text = "Mapa de codigos de genero:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(764, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "1 - Terror";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(764, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 16);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "2 - Terror";
             // 
             // TelaEstoque
             // 

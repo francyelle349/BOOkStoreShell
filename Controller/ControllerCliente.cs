@@ -10,7 +10,7 @@ namespace Controller
 {
     public class ControllerCliente
     {
-        public static bool loginCliente (string emailCliente, string senhaCliente)
+        public static bool loginCliente(string emailCliente, string senhaCliente)
         {
             Cliente resultado = new Cliente().getLoginCliente(emailCliente, senhaCliente);
             if (resultado.emailCliente == emailCliente && resultado.getSenhaCliente() == senhaCliente)
@@ -23,10 +23,15 @@ namespace Controller
             try
             {
                 new Cliente().cadastrarCliente(nomeCliente, emailCliente, cpfCliente, telCliente, senhaCliente);
-            } catch (SqlException ex)
+            }
+            catch (SqlException ex)
             {
                 throw ex;
             }
+        }
+        public void MostrarCliente(string nomeCliente, string emailCliente, string cpfCliente, string telCliente, string senhaCliente)
+        {
+            //jogar para os txtbox
         }
     }
 }

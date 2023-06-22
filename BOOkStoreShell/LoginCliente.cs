@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using View;
 using static Controller.ControllerCliente;
 
 namespace BOOkStoreShell
@@ -22,7 +23,7 @@ namespace BOOkStoreShell
         private void btnVoltarCliente_Click(object sender, EventArgs e)
         {
             this.Close();
-            var frm = new TelaCadastro();
+            var frm = new TelaMenu();
             frm.Show();
         }
 

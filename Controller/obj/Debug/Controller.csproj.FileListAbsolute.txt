@@ -18,3 +18,5 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.d
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.pdb
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1.mdf
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1_log.ldf
+C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1.mdf
+C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1_log.ldf
