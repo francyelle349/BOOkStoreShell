@@ -58,10 +58,5 @@ namespace BOOkStoreShell
         {
 
         }
-
-        private void txtPesquisar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -24,7 +24,6 @@ namespace BOOkStoreShell
             frm.Show();
         }
 
-<<<<<<< HEAD
         private void btnEditarInformacoesUsuario_Click(object sender, EventArgs e)
         {
 
@@ -34,11 +33,5 @@ namespace BOOkStoreShell
         {
       
         }
-=======
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
->>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
     }
 }
