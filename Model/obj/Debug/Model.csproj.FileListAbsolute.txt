@@ -12,5 +12,16 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.dll
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\obj\Debug\Model.pdb
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1.mdf
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf
+<<<<<<< HEAD
 C:\Users\Amanda\Desktop\BookStore\Model\bin\Debug\Database1.mdf
 C:\Users\Amanda\Desktop\BookStore\Model\bin\Debug\Database1_log.ldf
+=======
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\bin\Debug\Database1.mdf
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\bin\Debug\Model.dll
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\bin\Debug\Model.pdb
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\obj\Debug\Model.dll
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Model\obj\Debug\Model.pdb
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb

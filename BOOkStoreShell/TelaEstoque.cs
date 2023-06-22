@@ -386,9 +386,15 @@ namespace BOOkStoreShell
 
         }
 
+<<<<<<< HEAD
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpar();
+=======
+        private void Lista_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
         }
     }
 

@@ -18,5 +18,19 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.d
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\obj\Debug\Controller.pdb
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1.mdf
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1_log.ldf
+<<<<<<< HEAD
 C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1.mdf
 C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1_log.ldf
+=======
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Database1.mdf
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Database1_log.ldf
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Controller.dll
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Controller.pdb
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Model.dll
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\bin\Debug\Model.pdb
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\obj\Debug\Controller.dll
+C:\Users\hayri\Source\Repos\BOOkStoreShell\Controller\obj\Debug\Controller.pdb
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb

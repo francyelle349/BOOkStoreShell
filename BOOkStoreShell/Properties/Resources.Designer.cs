@@ -19,7 +19,7 @@ namespace View.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,15 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap FANTAS {
             get {
                 object obj = ResourceManager.GetObject("FANTAS", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap esqueletos {
+            get {
+                object obj = ResourceManager.GetObject("esqueletos", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +79,55 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap FANTAS1 {
             get {
                 object obj = ResourceManager.GetObject("FANTAS1", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap funcionario {
+            get {
+                object obj = ResourceManager.GetObject("funcionario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundocinza {
+            get {
+                object obj = ResourceManager.GetObject("fundocinza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundocinzaclaro {
+            get {
+                object obj = ResourceManager.GetObject("fundocinzaclaro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundocinzaformat {
+            get {
+                object obj = ResourceManager.GetObject("fundocinzaformat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +145,15 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap nn1 {
             get {
                 object obj = ResourceManager.GetObject("nn1", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap logo2 {
+            get {
+                object obj = ResourceManager.GetObject("logo2", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +221,15 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap TelaLogado {
             get {
                 object obj = ResourceManager.GetObject("TelaLogado", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap titulo {
+            get {
+                object obj = ResourceManager.GetObject("titulo", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +237,15 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap TelaPerfilUser {
             get {
                 object obj = ResourceManager.GetObject("TelaPerfilUser", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap titulo1 {
+            get {
+                object obj = ResourceManager.GetObject("titulo1", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +253,7 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap TelaPerfilUser__1_ {
             get {
                 object obj = ResourceManager.GetObject("TelaPerfilUser (1)", resourceCulture);
@@ -216,6 +287,11 @@ namespace View.Properties {
         internal static System.Drawing.Bitmap TelaPerfilUser1 {
             get {
                 object obj = ResourceManager.GetObject("TelaPerfilUser1", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap titulo11 {
+            get {
+                object obj = ResourceManager.GetObject("titulo11", resourceCulture);
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

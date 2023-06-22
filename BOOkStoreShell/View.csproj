@@ -184,6 +184,7 @@
     <None Include="img\TelaGerenteEstoque.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="img\TelaLogado.png" />
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +198,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\nn1.gif" />
+=======
+    <None Include="img\esqueletos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fundocinza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\titulo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\funcionario.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fundocinzaclaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\fundocinzaformat.png" />
+>>>>>>> 1fb1bf19a4a1faebc7c23ffa85478a15dd8dcfbb
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
