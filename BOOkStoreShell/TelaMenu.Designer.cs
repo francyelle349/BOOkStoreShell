@@ -41,9 +41,10 @@
             // 
             // btnCliente
             // 
-            this.btnCliente.Location = new System.Drawing.Point(997, 29);
+            this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Location = new System.Drawing.Point(981, 29);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnCliente.Size = new System.Drawing.Size(103, 23);
             this.btnCliente.TabIndex = 1;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             // btnGerente
             // 
-            this.btnGerente.Location = new System.Drawing.Point(1149, 29);
+            this.btnGerente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerente.Location = new System.Drawing.Point(1138, 29);
             this.btnGerente.Name = "btnGerente";
-            this.btnGerente.Size = new System.Drawing.Size(75, 23);
+            this.btnGerente.Size = new System.Drawing.Size(96, 23);
             this.btnGerente.TabIndex = 2;
             this.btnGerente.Text = "Gerente";
             this.btnGerente.UseVisualStyleBackColor = true;

@@ -43,7 +43,7 @@ namespace BOOkStoreShell
 
         private void TelaCarrinho_Load(object sender, EventArgs e)
         {
-            Controller.ControllerCarrinho.ExibirCarrinho();
+            
         }
     }
 }

@@ -55,11 +55,11 @@
             // 
             // btnLoginCliente
             // 
-            this.btnLoginCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnLoginCliente.Location = new System.Drawing.Point(582, 594);
+            this.btnLoginCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnLoginCliente.Location = new System.Drawing.Point(547, 593);
             this.btnLoginCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoginCliente.Name = "btnLoginCliente";
-            this.btnLoginCliente.Size = new System.Drawing.Size(113, 27);
+            this.btnLoginCliente.Size = new System.Drawing.Size(158, 32);
             this.btnLoginCliente.TabIndex = 10;
             this.btnLoginCliente.Text = "Logar";
             this.btnLoginCliente.UseVisualStyleBackColor = true;

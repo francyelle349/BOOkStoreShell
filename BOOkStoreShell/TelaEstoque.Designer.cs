@@ -44,9 +44,6 @@
             this.chkDeletar = new System.Windows.Forms.CheckBox();
             this.Configuração = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.txtIdLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,6 +61,8 @@
             this.errorIcone = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensagem = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataLista)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -71,6 +70,7 @@
             this.Configuração.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,10 +124,11 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(1161, 34);
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(1140, 26);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(63, 21);
+            this.btnVoltar.Size = new System.Drawing.Size(83, 26);
             this.btnVoltar.TabIndex = 45;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -188,6 +189,7 @@
             // 
             // Lista
             // 
+            this.Lista.BackColor = System.Drawing.Color.Silver;
             this.Lista.Controls.Add(this.chkDeletar);
             this.Lista.Controls.Add(this.txtPesquisar);
             this.Lista.Controls.Add(this.btnImprimir);
@@ -201,7 +203,6 @@
             this.Lista.Size = new System.Drawing.Size(1038, 468);
             this.Lista.TabIndex = 0;
             this.Lista.Text = "Lista";
-            this.Lista.UseVisualStyleBackColor = true;
             // 
             // chkDeletar
             // 
@@ -216,6 +217,7 @@
             // 
             // Configuração
             // 
+            this.Configuração.BackColor = System.Drawing.Color.Silver;
             this.Configuração.Controls.Add(this.groupBox1);
             this.Configuração.Location = new System.Drawing.Point(4, 25);
             this.Configuração.Name = "Configuração";
@@ -223,13 +225,11 @@
             this.Configuração.Size = new System.Drawing.Size(1038, 468);
             this.Configuração.TabIndex = 1;
             this.Configuração.Text = "Configurações";
-            this.Configuração.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.txtGenero);
             this.groupBox1.Controls.Add(this.txtIdLivro);
             this.groupBox1.Controls.Add(this.label2);
@@ -251,33 +251,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Livros";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(764, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 16);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "2 - Terror";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(764, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
-            this.label4.TabIndex = 96;
-            this.label4.Text = "1 - Terror";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(764, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 16);
-            this.label3.TabIndex = 95;
-            this.label3.Text = "Mapa de codigos de genero:";
-            // 
             // txtGenero
             // 
             this.txtGenero.Location = new System.Drawing.Point(124, 99);
@@ -289,17 +262,17 @@
             // txtIdLivro
             // 
             this.txtIdLivro.Enabled = false;
-            this.txtIdLivro.Location = new System.Drawing.Point(473, 160);
+            this.txtIdLivro.Location = new System.Drawing.Point(323, 319);
             this.txtIdLivro.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdLivro.Name = "txtIdLivro";
-            this.txtIdLivro.Size = new System.Drawing.Size(92, 22);
+            this.txtIdLivro.Size = new System.Drawing.Size(77, 22);
             this.txtIdLivro.TabIndex = 93;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(376, 158);
+            this.label2.Location = new System.Drawing.Point(246, 319);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
@@ -361,7 +334,7 @@
             // 
             this.lblGenero.AutoSize = true;
             this.lblGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblGenero.Location = new System.Drawing.Point(53, 99);
+            this.lblGenero.Location = new System.Drawing.Point(42, 99);
             this.lblGenero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGenero.Name = "lblGenero";
             this.lblGenero.Size = new System.Drawing.Size(64, 20);
@@ -372,7 +345,7 @@
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblPreco.Location = new System.Drawing.Point(392, 99);
+            this.lblPreco.Location = new System.Drawing.Point(412, 101);
             this.lblPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPreco.Name = "lblPreco";
             this.lblPreco.Size = new System.Drawing.Size(53, 20);
@@ -391,7 +364,7 @@
             // 
             this.lblNumeroEstoque.AutoSize = true;
             this.lblNumeroEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNumeroEstoque.Location = new System.Drawing.Point(53, 160);
+            this.lblNumeroEstoque.Location = new System.Drawing.Point(246, 101);
             this.lblNumeroEstoque.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumeroEstoque.Name = "lblNumeroEstoque";
             this.lblNumeroEstoque.Size = new System.Drawing.Size(41, 20);
@@ -400,10 +373,10 @@
             // 
             // txtNumeroEstoque
             // 
-            this.txtNumeroEstoque.Location = new System.Drawing.Point(124, 158);
+            this.txtNumeroEstoque.Location = new System.Drawing.Point(295, 101);
             this.txtNumeroEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroEstoque.Name = "txtNumeroEstoque";
-            this.txtNumeroEstoque.Size = new System.Drawing.Size(143, 22);
+            this.txtNumeroEstoque.Size = new System.Drawing.Size(77, 22);
             this.txtNumeroEstoque.TabIndex = 81;
             // 
             // txtTitulo
@@ -425,6 +398,38 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Silver;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Códigos dos generos:",
+            "1 - Terror",
+            "2 - Suspense",
+            "3 - Thriller",
+            "4 - Mistério",
+            "5 - CriminaL",
+            "6 - Ficção Científica",
+            "7 - Fantasia",
+            "8 - Horror",
+            "9 - Contos"});
+            this.listBox1.Location = new System.Drawing.Point(46, 143);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(172, 196);
+            this.listBox1.TabIndex = 95;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.feb44d0739862255231624708d2d284e;
+            this.pictureBox2.Location = new System.Drawing.Point(640, 50);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(346, 291);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 96;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -459,6 +464,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -497,8 +503,7 @@
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

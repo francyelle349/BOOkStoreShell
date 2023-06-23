@@ -18,8 +18,8 @@ namespace Controller
 
 
       
-        /*
-        public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
+        
+        /*public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
         {
             Pedido Obj = new Pedido();
             Obj.CpfCliente = cpfCliente;
@@ -40,7 +40,7 @@ namespace Controller
              * insert into Pedido set (cpfcliente,TotalCompra,DataPedido) 
              * values (@cpfcliente,@TotalCompra,@DataPedido)
              
-        }*/
-
+        }
+    */
     }
 }

@@ -201,5 +201,17 @@
   <ItemGroup>
     <None Include="img\ERo4.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaAddCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\m2nOEq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\feb44d0739862255231624708d2d284e.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

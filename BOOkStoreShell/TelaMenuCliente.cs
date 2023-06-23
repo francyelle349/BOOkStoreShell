@@ -157,66 +157,76 @@ namespace BOOkStoreShell
         {
             try
             {
-                string resp = "";
-                if (this.txtQtdCompra.Text == string.Empty)
-                {
-                    MessageBox.Show("Preencha todos os campos");
-
+                if (Convert.ToInt32(txtNumeroEstoque.Text) < Convert.ToInt32(txtQtdCompra.Text)) {
+                    MessageBox.Show("Quantidade de compra maior que estoque!");
                 }
-              
-                else
-                {
-                    try
+                else { 
+
+                    string resp = "";
+                    if (this.txtQtdCompra.Text == string.Empty)
                     {
-                        DialogResult Opcao;
-                        Opcao = MessageBox.Show("Realmente Finalizar a compra?", "BOOkstore", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                        if (Opcao == DialogResult.OK)
+                        MessageBox.Show("Preencha todos os campos");
+
+                    }
+
+                    else
+                    {
+                        try
                         {
-                            int diferenca;
-                            string cpfCliente;
-                            int idLivro;
-                            string nomeLivro;
-                            int genero;
-                            int estoque;
-                            double precoUnitario;
-                            int qtdCompra;
-                            string data;
+                            float total = Convert.ToInt32(txtQtdCompra.Text) * float.Parse(txtPreco.Text);
+                            string cpf = txtboxCpf.Text;
 
-                            float preco;
-                            cpfCliente = txtboxCpf.Text;
-                            idLivro = Convert.ToInt32(txtIdLivro.Text);
-                            nomeLivro = txtTitulo.Text;
-                            genero = Convert.ToInt32(txtGenero.Text);
-                            estoque = Convert.ToInt32(txtNumeroEstoque.Text);
-                            precoUnitario = Convert.ToDouble(txtPreco.Text);
-                            qtdCompra = Convert.ToInt32(txtQtdCompra.Text);
-                            diferenca = Convert.ToInt32(txtNumeroEstoque.Text) - Convert.ToInt32(txtQtdCompra.Text);
-                            data = Convert.ToString(DateTime.Now);
-                            preco = float.Parse(txtPreco.Text);
+                            DialogResult Opcao;
+                            Opcao = MessageBox.Show(cpf + "\nDeseja efetuar a compra?\n"+ "Total:"+total, "BOOkstore", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                           
 
-
-                            //usando metedo editar livro
-                            resp = Controller.ControllerLivro.cEditar_Livro(idLivro, this.txtTitulo.Text.Trim(), genero, diferenca, preco);
-
-                            // add a pedido resp = Controller.ControllerCarrinho(cpfCliente,idLivro, nomeLivro, genero, estoque, precoUnitario, qtdCompra);
-                            if (resp.Equals("Ok"))
+                            if (Opcao == DialogResult.OK)
                             {
-                                MessageBox.Show("COMPRA FINALIZADA");
-                            }
-                            else
-                            {
-                                MessageBox.Show(resp);
-                            }
+                                int diferenca;
+                                string cpfCliente;
+                                int idLivro;
+                                string nomeLivro;
+                                int genero;
+                                int estoque;
+                                double precoUnitario;
+                                int qtdCompra;
+                                string data;
 
-                            this.Limpar();
-                            this.Mostrar();
+                                float preco;
+                                cpfCliente = txtboxCpf.Text;
+                                idLivro = Convert.ToInt32(txtIdLivro.Text);
+                                nomeLivro = txtTitulo.Text;
+                                genero = Convert.ToInt32(txtGenero.Text);
+                                estoque = Convert.ToInt32(txtNumeroEstoque.Text);
+                                precoUnitario = Convert.ToDouble(txtPreco.Text);
+                                qtdCompra = Convert.ToInt32(txtQtdCompra.Text);
+                                diferenca = Convert.ToInt32(txtNumeroEstoque.Text) - Convert.ToInt32(txtQtdCompra.Text);
+                                data = Convert.ToString(DateTime.Now);
+                                preco = float.Parse(txtPreco.Text);
+
+
+                                //usando metedo editar livro
+                                resp = Controller.ControllerLivro.cEditar_Livro(idLivro, this.txtTitulo.Text.Trim(), genero, diferenca, preco);
+
+                                // add a pedido resp = Controller.ControllerCarr[bookstore]inho(cpfCliente,idLivro, nomeLivro, genero, estoque, precoUnitario, qtdCompra);
+                                if (resp.Equals("Ok"))
+                                {
+                                    MessageBox.Show("COMPRA FINALIZADA");
+                                }
+                                else
+                                {
+                                    MessageBox.Show(resp);
+                                }
+
+                                this.Limpar();
+                                this.Mostrar();
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message + ex.StackTrace);
-                    }
-                }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message + ex.StackTrace);
+                        }
+                    } }
             }
             catch (Exception ex)
             {

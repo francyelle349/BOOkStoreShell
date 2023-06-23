@@ -93,9 +93,39 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap feb44d0739862255231624708d2d284e {
+            get {
+                object obj = ResourceManager.GetObject("feb44d0739862255231624708d2d284e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Homepage {
             get {
                 object obj = ResourceManager.GetObject("Homepage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m2nOEq {
+            get {
+                object obj = ResourceManager.GetObject("m2nOEq", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +176,16 @@ namespace View.Properties {
         internal static System.Drawing.Bitmap Tela_Menu13 {
             get {
                 object obj = ResourceManager.GetObject("Tela Menu13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelaAddCliente {
+            get {
+                object obj = ResourceManager.GetObject("TelaAddCliente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

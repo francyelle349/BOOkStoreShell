@@ -388,8 +388,9 @@ namespace BOOkStoreShell
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.eEditar = true;
             Limpar();
+            eEditar = true;
+            
         }
     }
 
