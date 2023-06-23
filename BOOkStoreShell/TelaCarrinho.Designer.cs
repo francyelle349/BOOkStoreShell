@@ -38,6 +38,8 @@ namespace BOOkStoreShell
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +64,7 @@ namespace BOOkStoreShell
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1022, 427);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnExcluir
             // 
@@ -112,11 +115,30 @@ namespace BOOkStoreShell
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(739, 135);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(173, 22);
+            this.txtCpf.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(626, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "confirme seu cpf:";
+            // 
             // TelaCarrinho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtValorTotal);
             this.Controls.Add(this.btnComprar);
@@ -129,6 +151,7 @@ namespace BOOkStoreShell
             this.Name = "TelaCarrinho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrinho";
+            this.Load += new System.EventHandler(this.TelaCarrinho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -150,5 +173,7 @@ namespace BOOkStoreShell
         private System.Windows.Forms.TextBox txtValorTotal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.Label label2;
     }
 }

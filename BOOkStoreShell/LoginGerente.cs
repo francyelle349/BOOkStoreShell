@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using View;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BOOkStoreShell
 {
@@ -19,12 +21,24 @@ namespace BOOkStoreShell
 
         private void btnLoginGerente_Click(object sender, EventArgs e)
         {
+            
+            if(txtSenhaGerente.Text ==  "gatinho123")
+            {
+                this.Hide();
+                TelaGerente frm = new TelaGerente();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ocorreu um erro. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            this.Hide();
-            TelaGerente frm = new TelaGerente();
+            }
+            
+        }
 
-
-            frm.Show();
+        private void LoginGerente_Load(object sender, EventArgs e)
+        {
+            txtSenhaGerente.UseSystemPasswordChar = true;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using Controller;
 namespace BOOkStoreShell
 {
     public partial class TelaCarrinho : Form
@@ -34,6 +34,16 @@ namespace BOOkStoreShell
 
 
             frm.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TelaCarrinho_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

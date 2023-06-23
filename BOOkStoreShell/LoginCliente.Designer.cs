@@ -44,8 +44,8 @@
             // 
             // btnVoltarCliente
             // 
-            this.btnVoltarCliente.Location = new System.Drawing.Point(1164, 26);
-            this.btnVoltarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltarCliente.Location = new System.Drawing.Point(1158, 31);
+            this.btnVoltarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarCliente.Name = "btnVoltarCliente";
             this.btnVoltarCliente.Size = new System.Drawing.Size(74, 26);
             this.btnVoltarCliente.TabIndex = 11;
@@ -55,11 +55,11 @@
             // 
             // btnLoginCliente
             // 
-            this.btnLoginCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnLoginCliente.Location = new System.Drawing.Point(581, 592);
-            this.btnLoginCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoginCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnLoginCliente.Location = new System.Drawing.Point(547, 593);
+            this.btnLoginCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoginCliente.Name = "btnLoginCliente";
-            this.btnLoginCliente.Size = new System.Drawing.Size(113, 27);
+            this.btnLoginCliente.Size = new System.Drawing.Size(158, 32);
             this.btnLoginCliente.TabIndex = 10;
             this.btnLoginCliente.Text = "Logar";
             this.btnLoginCliente.UseVisualStyleBackColor = true;
@@ -94,23 +94,24 @@
             // txtSenhaCliente
             // 
             this.txtSenhaCliente.Location = new System.Drawing.Point(438, 443);
-            this.txtSenhaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSenhaCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenhaCliente.Name = "txtSenhaCliente";
             this.txtSenhaCliente.Size = new System.Drawing.Size(391, 22);
             this.txtSenhaCliente.TabIndex = 7;
+            this.txtSenhaCliente.UseSystemPasswordChar = true;
             // 
             // txtEmailCliente
             // 
-            this.txtEmailCliente.Location = new System.Drawing.Point(438, 366);
-            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailCliente.Location = new System.Drawing.Point(438, 368);
+            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Size = new System.Drawing.Size(384, 22);
             this.txtEmailCliente.TabIndex = 6;
             // 
             // btnNaoTemCadastroCliente
             // 
-            this.btnNaoTemCadastroCliente.Location = new System.Drawing.Point(650, 488);
-            this.btnNaoTemCadastroCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNaoTemCadastroCliente.Location = new System.Drawing.Point(650, 489);
+            this.btnNaoTemCadastroCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnNaoTemCadastroCliente.Name = "btnNaoTemCadastroCliente";
             this.btnNaoTemCadastroCliente.Size = new System.Drawing.Size(179, 25);
             this.btnNaoTemCadastroCliente.TabIndex = 12;
@@ -121,7 +122,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-8, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-10, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1277, 677);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +154,7 @@
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginCliente";

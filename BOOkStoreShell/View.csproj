@@ -52,12 +52,6 @@
     <Compile Include="LoginCliente.Designer.cs">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginFuncionario.Designer.cs">
-      <DependentUpon>LoginFuncionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginGerente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,29 +60,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TelaCarrinho.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaCarrinho.Designer.cs">
       <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaFuncionarioAddLivro.cs">
+    <Compile Include="TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaFuncionarioAddLivro.Designer.cs">
-      <DependentUpon>TelaFuncionarioAddLivro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaFuncionarioEstoque.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaFuncionarioEstoque.Designer.cs">
-      <DependentUpon>TelaFuncionarioEstoque.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaMenu.Designer.cs">
-      <DependentUpon>TelaMenu.cs</DependentUpon>
+    <Compile Include="TelaCadastro.Designer.cs">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaFavoritos.cs">
       <SubType>Form</SubType>
@@ -96,53 +83,29 @@
     <Compile Include="TelaFavoritos.Designer.cs">
       <DependentUpon>TelaFavoritos.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaFuncionario.Designer.cs">
-      <DependentUpon>TelaFuncionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaGerente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaGerente.Designer.cs">
       <DependentUpon>TelaGerente.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaGerenteAddFunc.cs">
+    <Compile Include="TelaEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaGerenteAddFunc.Designer.cs">
-      <DependentUpon>TelaGerenteAddFunc.cs</DependentUpon>
+    <Compile Include="TelaEstoque.Designer.cs">
+      <DependentUpon>TelaEstoque.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaGerenteAddLivro.cs">
+    <Compile Include="TelaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaGerenteAddLivro.Designer.cs">
-      <DependentUpon>TelaGerenteAddLivro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaGerenteEstoque.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaGerenteEstoque.Designer.cs">
-      <DependentUpon>TelaGerenteEstoque.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaGerenteFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaGerenteFuncionario.Designer.cs">
-      <DependentUpon>TelaGerenteFuncionario.cs</DependentUpon>
+    <Compile Include="TelaMenu.Designer.cs">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaMenuCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaMenuCliente.Designer.cs">
       <DependentUpon>TelaMenuCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaPerfilFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaPerfilFuncionario.Designer.cs">
-      <DependentUpon>TelaPerfilFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPerfilUsuario.cs">
       <SubType>Form</SubType>
@@ -153,60 +116,34 @@
     <EmbeddedResource Include="LoginCliente.resx">
       <DependentUpon>LoginCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginFuncionario.resx">
-      <DependentUpon>LoginFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginGerente.resx">
       <DependentUpon>LoginGerente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="TelaCarrinho.resx">
       <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaFuncionarioAddLivro.resx">
-      <DependentUpon>TelaFuncionarioAddLivro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaFuncionarioEstoque.resx">
-      <DependentUpon>TelaFuncionarioEstoque.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaMenu.resx">
-      <DependentUpon>TelaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="TelaCadastro.resx">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaFavoritos.resx">
       <DependentUpon>TelaFavoritos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaFuncionario.resx">
-      <DependentUpon>TelaFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TelaGerente.resx">
       <DependentUpon>TelaGerente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaGerenteAddFunc.resx">
-      <DependentUpon>TelaGerenteAddFunc.cs</DependentUpon>
+    <EmbeddedResource Include="TelaEstoque.resx">
+      <DependentUpon>TelaEstoque.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaGerenteAddLivro.resx">
-      <DependentUpon>TelaGerenteAddLivro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaGerenteEstoque.resx">
-      <DependentUpon>TelaGerenteEstoque.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaGerenteFuncionario.resx">
-      <DependentUpon>TelaGerenteFuncionario.cs</DependentUpon>
+    <EmbeddedResource Include="TelaMenu.resx">
+      <DependentUpon>TelaMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaMenuCliente.resx">
       <DependentUpon>TelaMenuCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaPerfilFuncionario.resx">
-      <DependentUpon>TelaPerfilFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPerfilUsuario.resx">
       <DependentUpon>TelaPerfilUsuario.cs</DependentUpon>
@@ -223,6 +160,58 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{6abb877b-e1fa-4f9f-b03a-bbfad1bfaea8}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{91de74bb-b1bc-49ad-b903-bce8208e733f}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Tela Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaGerente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaGerenteEstoque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaLogado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\FANTAS.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaPerfilUser %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaPerfilUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\nn1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ERo4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\TelaAddCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\m2nOEq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\feb44d0739862255231624708d2d284e.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

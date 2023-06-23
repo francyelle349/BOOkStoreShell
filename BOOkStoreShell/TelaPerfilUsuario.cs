@@ -23,5 +23,15 @@ namespace BOOkStoreShell
             var frm = new LoginCliente();
             frm.Show();
         }
+
+        private void btnEditarInformacoesUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaPerfilUsuario_Load(object sender, EventArgs e)
+        {
+      
+        }
     }
 }
