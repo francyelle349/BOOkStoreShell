@@ -1,3 +1,8 @@
 *.mdf
-/BOOkStoreShell/bin/debug
-/BOOkStoreShell/obj/debug
+/BOOkStoreShell/bin
+/BOOkStoreShell/obj
+/Model/bin
+/Model/obj
+/Controller/bin
+/Controller/obj
+/.vs
