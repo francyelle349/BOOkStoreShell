@@ -169,7 +169,7 @@
             // lblTotalLivros
             // 
             this.lblTotalLivros.AutoSize = true;
-            this.lblTotalLivros.Location = new System.Drawing.Point(621, 44);
+            this.lblTotalLivros.Location = new System.Drawing.Point(186, 94);
             this.lblTotalLivros.Name = "lblTotalLivros";
             this.lblTotalLivros.Size = new System.Drawing.Size(57, 16);
             this.lblTotalLivros.TabIndex = 60;

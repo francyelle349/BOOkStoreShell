@@ -39,8 +39,11 @@
             this.btnPesquisarEstoque = new System.Windows.Forms.Button();
             this.Livro = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtboxCpf = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQtdCompra = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
@@ -54,10 +57,7 @@
             this.lblNumeroEstoque = new System.Windows.Forms.Label();
             this.txtNumeroEstoque = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtboxCpf = new System.Windows.Forms.TextBox();
             this.tabControlCliente.SuspendLayout();
             this.Vitrine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListaEstoque)).BeginInit();
@@ -92,11 +92,11 @@
             // btnAddCarrinho
             // 
             this.btnAddCarrinho.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCarrinho.Location = new System.Drawing.Point(165, 361);
+            this.btnAddCarrinho.Location = new System.Drawing.Point(117, 362);
             this.btnAddCarrinho.Name = "btnAddCarrinho";
-            this.btnAddCarrinho.Size = new System.Drawing.Size(205, 41);
+            this.btnAddCarrinho.Size = new System.Drawing.Size(283, 41);
             this.btnAddCarrinho.TabIndex = 19;
-            this.btnAddCarrinho.Text = "AddCarrinho";
+            this.btnAddCarrinho.Text = "Efetuar a Compra";
             this.btnAddCarrinho.UseVisualStyleBackColor = true;
             this.btnAddCarrinho.Click += new System.EventHandler(this.btnAddCarrinho_Click);
             // 
@@ -205,6 +205,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ÁREA DE COMPRA";
             // 
+            // txtboxCpf
+            // 
+            this.txtboxCpf.Location = new System.Drawing.Point(311, 313);
+            this.txtboxCpf.Name = "txtboxCpf";
+            this.txtboxCpf.Size = new System.Drawing.Size(159, 22);
+            this.txtboxCpf.TabIndex = 101;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label6.Location = new System.Drawing.Point(27, 313);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 29);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "Confirme seu cpf:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -226,6 +243,16 @@
             this.label4.TabIndex = 98;
             this.label4.Text = "Quantidade da Compra:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
+            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 97;
+            this.pictureBox2.TabStop = false;
             // 
             // label3
             // 
@@ -354,16 +381,6 @@
             this.txtTitulo.Size = new System.Drawing.Size(376, 22);
             this.txtTitulo.TabIndex = 80;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
-            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 97;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::View.Properties.Resources.TelaLogado;
@@ -373,23 +390,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label6.Location = new System.Drawing.Point(27, 313);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 29);
-            this.label6.TabIndex = 100;
-            this.label6.Text = "Confirme seu cpf:";
-            // 
-            // txtboxCpf
-            // 
-            this.txtboxCpf.Location = new System.Drawing.Point(311, 313);
-            this.txtboxCpf.Name = "txtboxCpf";
-            this.txtboxCpf.Size = new System.Drawing.Size(159, 22);
-            this.txtboxCpf.TabIndex = 101;
             // 
             // TelaMenuCliente
             // 
