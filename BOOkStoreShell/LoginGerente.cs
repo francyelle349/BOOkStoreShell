@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using View;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BOOkStoreShell
@@ -14,7 +15,7 @@ namespace BOOkStoreShell
         private void btnVoltarGerente_Click(object sender, EventArgs e)
         {
             this.Close();
-            var frm = new TelaCadastro();
+            var frm = new TelaMenu();
             frm.Show();
         }
 
