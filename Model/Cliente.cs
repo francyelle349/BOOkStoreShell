@@ -44,7 +44,7 @@ namespace Model
             SqlCon.Open();
             SqlCmd.Parameters.AddWithValue("@emailCliente", emailCliente);
             SqlCmd.Parameters.AddWithValue("@senhaCliente", senhaCliente);
-            Cliente cliente = new Cliente("", emailCliente, "", "", senhaCliente);
+            Cliente cliente = new Cliente();
             try
             {
                 using (SqlDataReader reader = SqlCmd.ExecuteReader())
