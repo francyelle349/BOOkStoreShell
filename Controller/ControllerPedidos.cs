@@ -22,14 +22,11 @@ namespace Controller
             return Pedido.getTotalVendas();
         }
 
-<<<<<<< Updated upstream
+
       
         
-        /*public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
-=======
         /*
         public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
->>>>>>> Stashed changes
         {
             Pedido Obj = new Pedido();
             Obj.CpfCliente = cpfCliente;

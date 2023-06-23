@@ -388,17 +388,11 @@ namespace BOOkStoreShell
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-<<<<<<< Updated upstream
-            Limpar();
-            eEditar = true;
-            
-=======
             eNovo = false;
             eEditar = false;
             Hbotoes();
             Limpar();
             Mostrar();
->>>>>>> Stashed changes
         }
     }
 
