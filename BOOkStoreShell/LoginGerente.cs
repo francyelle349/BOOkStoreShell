@@ -21,7 +21,7 @@ namespace BOOkStoreShell
         private void btnLoginGerente_Click(object sender, EventArgs e)
         {
             
-            if(txtSenhaGerente.Text ==  "gatinho123")
+            if(txtSenhaGerente.Text.GetHashCode() ==  "gatinho123".GetHashCode())
             {
                 this.Hide();
                 TelaGerente frm = new TelaGerente();

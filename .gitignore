@@ -1,4 +1,4 @@
-*.mdf
+/Model/*.mdf
 /BOOkStoreShell/bin
 /BOOkStoreShell/obj
 /Model/bin
