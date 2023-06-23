@@ -44,6 +44,10 @@
             this.txtConfirmarSenhaCliente = new System.Windows.Forms.TextBox();
             this.lblConfirmarSenhaCliente = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // backgroundWorker1
@@ -55,7 +59,7 @@
             this.btnEntrarCliente.BackColor = System.Drawing.Color.Transparent;
             this.btnEntrarCliente.FlatAppearance.BorderSize = 0;
             this.btnEntrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnEntrarCliente.Location = new System.Drawing.Point(715, 454);
+            this.btnEntrarCliente.Location = new System.Drawing.Point(1154, 28);
             this.btnEntrarCliente.Margin = new System.Windows.Forms.Padding(0);
             this.btnEntrarCliente.Name = "btnEntrarCliente";
             this.btnEntrarCliente.Size = new System.Drawing.Size(79, 25);
@@ -66,15 +70,15 @@
             // 
             // txtCPFCliente
             // 
-            this.txtCPFCliente.Location = new System.Drawing.Point(454, 325);
+            this.txtCPFCliente.Location = new System.Drawing.Point(425, 417);
             this.txtCPFCliente.Name = "txtCPFCliente";
-            this.txtCPFCliente.Size = new System.Drawing.Size(130, 22);
+            this.txtCPFCliente.Size = new System.Drawing.Size(189, 22);
             this.txtCPFCliente.TabIndex = 17;
             // 
             // lblCPFCliente
             // 
             this.lblCPFCliente.AutoSize = true;
-            this.lblCPFCliente.Location = new System.Drawing.Point(401, 325);
+            this.lblCPFCliente.Location = new System.Drawing.Point(431, 383);
             this.lblCPFCliente.Name = "lblCPFCliente";
             this.lblCPFCliente.Size = new System.Drawing.Size(36, 16);
             this.lblCPFCliente.TabIndex = 16;
@@ -82,15 +86,15 @@
             // 
             // txtEmailCliente
             // 
-            this.txtEmailCliente.Location = new System.Drawing.Point(454, 297);
+            this.txtEmailCliente.Location = new System.Drawing.Point(425, 345);
             this.txtEmailCliente.Name = "txtEmailCliente";
-            this.txtEmailCliente.Size = new System.Drawing.Size(340, 22);
+            this.txtEmailCliente.Size = new System.Drawing.Size(473, 22);
             this.txtEmailCliente.TabIndex = 15;
             // 
             // lblEmailCliente
             // 
             this.lblEmailCliente.AutoSize = true;
-            this.lblEmailCliente.Location = new System.Drawing.Point(401, 297);
+            this.lblEmailCliente.Location = new System.Drawing.Point(348, 348);
             this.lblEmailCliente.Name = "lblEmailCliente";
             this.lblEmailCliente.Size = new System.Drawing.Size(48, 16);
             this.lblEmailCliente.TabIndex = 14;
@@ -98,15 +102,15 @@
             // 
             // txtNomeCliente
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(454, 269);
+            this.txtNomeCliente.Location = new System.Drawing.Point(425, 276);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(340, 22);
+            this.txtNomeCliente.Size = new System.Drawing.Size(470, 22);
             this.txtNomeCliente.TabIndex = 13;
             // 
             // lblNomeCadastro
             // 
             this.lblNomeCadastro.AutoSize = true;
-            this.lblNomeCadastro.Location = new System.Drawing.Point(401, 269);
+            this.lblNomeCadastro.Location = new System.Drawing.Point(349, 276);
             this.lblNomeCadastro.Name = "lblNomeCadastro";
             this.lblNomeCadastro.Size = new System.Drawing.Size(47, 16);
             this.lblNomeCadastro.TabIndex = 12;
@@ -114,16 +118,16 @@
             // 
             // txtSenhaCliente
             // 
-            this.txtSenhaCliente.Location = new System.Drawing.Point(454, 353);
+            this.txtSenhaCliente.Location = new System.Drawing.Point(425, 479);
             this.txtSenhaCliente.Name = "txtSenhaCliente";
-            this.txtSenhaCliente.Size = new System.Drawing.Size(107, 22);
+            this.txtSenhaCliente.Size = new System.Drawing.Size(189, 22);
             this.txtSenhaCliente.TabIndex = 21;
             this.txtSenhaCliente.UseSystemPasswordChar = true;
             // 
             // lblSenhaCliente
             // 
             this.lblSenhaCliente.AutoSize = true;
-            this.lblSenhaCliente.Location = new System.Drawing.Point(401, 353);
+            this.lblSenhaCliente.Location = new System.Drawing.Point(431, 450);
             this.lblSenhaCliente.Name = "lblSenhaCliente";
             this.lblSenhaCliente.Size = new System.Drawing.Size(49, 16);
             this.lblSenhaCliente.TabIndex = 20;
@@ -131,15 +135,15 @@
             // 
             // txtTelefoneCliente
             // 
-            this.txtTelefoneCliente.Location = new System.Drawing.Point(664, 325);
+            this.txtTelefoneCliente.Location = new System.Drawing.Point(707, 417);
             this.txtTelefoneCliente.Name = "txtTelefoneCliente";
-            this.txtTelefoneCliente.Size = new System.Drawing.Size(130, 22);
+            this.txtTelefoneCliente.Size = new System.Drawing.Size(191, 22);
             this.txtTelefoneCliente.TabIndex = 19;
             // 
             // lblTelefoneCliente
             // 
             this.lblTelefoneCliente.AutoSize = true;
-            this.lblTelefoneCliente.Location = new System.Drawing.Point(590, 325);
+            this.lblTelefoneCliente.Location = new System.Drawing.Point(704, 383);
             this.lblTelefoneCliente.Name = "lblTelefoneCliente";
             this.lblTelefoneCliente.Size = new System.Drawing.Size(64, 16);
             this.lblTelefoneCliente.TabIndex = 18;
@@ -147,15 +151,15 @@
             // 
             // txtConfirmarSenhaCliente
             // 
-            this.txtConfirmarSenhaCliente.Location = new System.Drawing.Point(687, 353);
+            this.txtConfirmarSenhaCliente.Location = new System.Drawing.Point(425, 546);
             this.txtConfirmarSenhaCliente.Name = "txtConfirmarSenhaCliente";
-            this.txtConfirmarSenhaCliente.Size = new System.Drawing.Size(107, 22);
+            this.txtConfirmarSenhaCliente.Size = new System.Drawing.Size(189, 22);
             this.txtConfirmarSenhaCliente.TabIndex = 23;
             // 
             // lblConfirmarSenhaCliente
             // 
             this.lblConfirmarSenhaCliente.AutoSize = true;
-            this.lblConfirmarSenhaCliente.Location = new System.Drawing.Point(567, 353);
+            this.lblConfirmarSenhaCliente.Location = new System.Drawing.Point(422, 518);
             this.lblConfirmarSenhaCliente.Name = "lblConfirmarSenhaCliente";
             this.lblConfirmarSenhaCliente.Size = new System.Drawing.Size(109, 16);
             this.lblConfirmarSenhaCliente.TabIndex = 22;
@@ -163,20 +167,41 @@
             // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(714, 410);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(773, 595);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
-            this.btnCadastrarCliente.Size = new System.Drawing.Size(80, 26);
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(125, 26);
             this.btnCadastrarCliente.TabIndex = 24;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
             this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.m2nOEq;
+            this.pictureBox2.Location = new System.Drawing.Point(522, 139);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(213, 131);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 26;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::View.Properties.Resources.TelaAddCliente;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1267, 679);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.txtConfirmarSenhaCliente);
             this.Controls.Add(this.lblConfirmarSenhaCliente);
@@ -191,11 +216,14 @@
             this.Controls.Add(this.txtNomeCliente);
             this.Controls.Add(this.lblNomeCadastro);
             this.Controls.Add(this.btnEntrarCliente);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BOOkstore";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +245,7 @@
         private System.Windows.Forms.TextBox txtConfirmarSenhaCliente;
         private System.Windows.Forms.Label lblConfirmarSenhaCliente;
         private System.Windows.Forms.Button btnCadastrarCliente;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

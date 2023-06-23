@@ -141,10 +141,10 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(1159, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(1157, 26);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(73, 23);
+            this.btnVoltar.Size = new System.Drawing.Size(79, 26);
             this.btnVoltar.TabIndex = 31;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -268,7 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaPerfilUsuario";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPerfilUsuario";
             this.Load += new System.EventHandler(this.TelaPerfilUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

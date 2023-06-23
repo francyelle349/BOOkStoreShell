@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaMenuCliente));
-            this.btnCarrinho = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnAddCarrinho = new System.Windows.Forms.Button();
             this.tabControlCliente = new System.Windows.Forms.TabControl();
@@ -43,7 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQtdCompra = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
@@ -57,6 +55,7 @@
             this.lblNumeroEstoque = new System.Windows.Forms.Label();
             this.txtNumeroEstoque = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlCliente.SuspendLayout();
             this.Vitrine.SuspendLayout();
@@ -67,23 +66,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCarrinho
-            // 
-            this.btnCarrinho.Location = new System.Drawing.Point(1048, 27);
-            this.btnCarrinho.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCarrinho.Name = "btnCarrinho";
-            this.btnCarrinho.Size = new System.Drawing.Size(69, 28);
-            this.btnCarrinho.TabIndex = 15;
-            this.btnCarrinho.Text = "Carrinho";
-            this.btnCarrinho.UseVisualStyleBackColor = true;
-            this.btnCarrinho.Click += new System.EventHandler(this.btnCarrinho_Click);
-            // 
             // btnUsuario
             // 
-            this.btnUsuario.Location = new System.Drawing.Point(1153, 27);
+            this.btnUsuario.Location = new System.Drawing.Point(1152, 30);
             this.btnUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(78, 28);
+            this.btnUsuario.Size = new System.Drawing.Size(79, 25);
             this.btnUsuario.TabIndex = 17;
             this.btnUsuario.Text = "Usuário";
             this.btnUsuario.UseVisualStyleBackColor = true;
@@ -244,16 +232,6 @@
             this.label4.Text = "Quantidade da Compra:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
-            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 97;
-            this.pictureBox2.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -381,6 +359,16 @@
             this.txtTitulo.Size = new System.Drawing.Size(376, 22);
             this.txtTitulo.TabIndex = 80;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
+            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 97;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::View.Properties.Resources.TelaLogado;
@@ -398,7 +386,6 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.tabControlCliente);
             this.Controls.Add(this.btnUsuario);
-            this.Controls.Add(this.btnCarrinho);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -420,7 +407,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCarrinho;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAddCarrinho;

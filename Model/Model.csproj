@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
-    <Compile Include="Carrinho.cs" />
     <Compile Include="Livro.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Pedido.cs" />
