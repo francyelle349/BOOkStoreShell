@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Windows.Forms;
 using View;
 using static Controller.ControllerCliente;
@@ -34,6 +35,7 @@ namespace BOOkStoreShell
                 if (loginCliente(txtEmailCliente.Text, txtSenhaCliente.Text) == true)
                 {
                     this.Hide();
+                    MessageBox.Show(Cliente.idCliente + " - Logado com sucesso", "", MessageBoxButtons.OK);
                     TelaMenuCliente frm = new TelaMenuCliente();
                     frm.Show();
                 }

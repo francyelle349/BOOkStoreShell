@@ -10,6 +10,7 @@ namespace Model
 {
     public class Cliente
     {
+        public static int idCliente = 0;
         public string nomeCliente;
         public string emailCliente;
         public string cpfCliente;
@@ -17,6 +18,7 @@ namespace Model
         private string senhaCliente;
 
         public Cliente (
+            int idCliente = 0,
             string nomeCliente = "",
             string emailCliente = "",
             string cpfCliente = "",
@@ -24,6 +26,7 @@ namespace Model
             string senhaCliente = ""
             )
         {
+            Cliente.idCliente = idCliente;
             this.nomeCliente = nomeCliente;
             this.emailCliente = emailCliente;
             this.cpfCliente = cpfCliente;
@@ -40,7 +43,7 @@ namespace Model
         {
             // Inicia a string de conexão
             SqlConnection SqlCon = new SqlConnection(BD.cn);
-            SqlCommand SqlCmd = new SqlCommand("SELECT emailCliente, senhaCliente FROM cliente WHERE emailCliente = @emailCliente AND senhaCliente = @senhaCliente", SqlCon);
+            SqlCommand SqlCmd = new SqlCommand("SELECT idCliente, emailCliente, senhaCliente FROM cliente WHERE emailCliente = @emailCliente AND senhaCliente = @senhaCliente", SqlCon);
             SqlCon.Open();
             SqlCmd.Parameters.AddWithValue("@emailCliente", emailCliente);
             SqlCmd.Parameters.AddWithValue("@senhaCliente", senhaCliente);
@@ -54,6 +57,7 @@ namespace Model
                     {
                         cliente.emailCliente = reader["emailCliente"].ToString();
                         cliente.senhaCliente = reader["senhaCliente"].ToString();
+                        idCliente = Convert.ToInt32(reader["idCliente"].ToString());
                     }
                 }
             } catch (Exception)

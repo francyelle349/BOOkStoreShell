@@ -20,3 +20,14 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1.md
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Controller\bin\Debug\Database1_log.ldf
 C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1.mdf
 C:\Users\Amanda\Desktop\BookStore\Controller\bin\Debug\Database1_log.ldf
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Database1.mdf
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Database1_log.ldf
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Controller.dll
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Controller.pdb
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Model.dll
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\bin\Debug\Model.pdb
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\obj\Debug\Controller.dll
+C:\Users\64609-gabriel\Documents\BOOkStore\Controller\obj\Debug\Controller.pdb

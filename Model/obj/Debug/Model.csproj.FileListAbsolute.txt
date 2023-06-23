@@ -14,3 +14,11 @@ C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1.mdf
 C:\Users\Biel\Desktop\BOOKstore\BOOkStoreShell\Model\bin\Debug\Database1_log.ldf
 C:\Users\Amanda\Desktop\BookStore\Model\bin\Debug\Database1.mdf
 C:\Users\Amanda\Desktop\BookStore\Model\bin\Debug\Database1_log.ldf
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\bin\Debug\Database1.mdf
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\bin\Debug\Database1_log.ldf
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\bin\Debug\Model.dll
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\bin\Debug\Model.pdb
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\obj\Debug\Model.dll
+C:\Users\64609-gabriel\Documents\BOOkStore\Model\obj\Debug\Model.pdb
