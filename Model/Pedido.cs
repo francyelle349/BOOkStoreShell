@@ -35,7 +35,8 @@ namespace Model
             this.valorPedido = valorPedido;
             this.cpfCliente = cpfCliente;
         }
-     
+      
+
         public DataTable Exibir_Pedidos()
         {
             DataTable DtResultado = new DataTable("pedidos");
