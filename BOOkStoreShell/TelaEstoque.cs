@@ -8,8 +8,8 @@ namespace BOOkStoreShell
     public partial class TelaEstoque : Form
     {
         //variaveis de controle
-        private bool eNovo = false;
-        private bool eEditar = false;
+        private static bool eNovo;
+        private static bool eEditar;
         
         public TelaEstoque()
         {
@@ -52,22 +52,22 @@ namespace BOOkStoreShell
 
         private void Hbotoes()
         {
-            if (this.eNovo|| this.eEditar)
+            if (eNovo || eEditar)
             {
-                this.Habilitar(true);
-                this.btnNovo.Enabled = false;
-                this.btnSalvar.Enabled = true;
-                this.btnEditar.Enabled = false;
-                this.btnCancelar.Enabled = true;
+                Habilitar(true);
+                btnNovo.Enabled = false;
+                btnSalvar.Enabled = true;
+                btnEditar.Enabled = false;
+                btnCancelar.Enabled = true;
 
             }
             else
             {
-                this.Habilitar(false);
-                this.btnNovo.Enabled = true;
-                this.btnSalvar.Enabled = false;
-                this.btnEditar.Enabled = true;
-                this.btnCancelar.Enabled = false;
+                Habilitar(false);
+                btnNovo.Enabled = true;
+                btnSalvar.Enabled = false;
+                btnEditar.Enabled = true;
+                btnCancelar.Enabled = false;
                 
             }
         }
@@ -83,16 +83,16 @@ namespace BOOkStoreShell
 
         private void Mostrar()
         {
-            this.dataLista.DataSource = Controller.ControllerLivro.Exibir_Livro();
-            this.ocultarColunas();
+            dataLista.DataSource = Controller.ControllerLivro.Exibir_Livro();
+            ocultarColunas();
             lblTotalLivros.Text = "Total de Livros: " + Convert.ToString(dataLista.Rows.Count);
         }
 
         //Buscar pelo nome
         private void Pesquisar_Livro()
         {
-            this.dataLista.DataSource = Controller.ControllerLivro.Pesquisar(this.txtPesquisar.Text);
-            this.ocultarColunas();
+            dataLista.DataSource = Controller.ControllerLivro.Pesquisar(this.txtPesquisar.Text);
+            ocultarColunas();
             lblTotalLivros.Text = "Total de Registrados: " + Convert.ToString(dataLista.Rows.Count);
         }
 
@@ -106,15 +106,15 @@ namespace BOOkStoreShell
 
         private void btnLivro_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
           
         }
 
         private void TelaGerenteEstoque_Load(object sender, EventArgs e)
         {
-            this.Mostrar();
-            this.Habilitar(false);
-            this.Hbotoes();
+            Mostrar();
+            Habilitar(false);
+            Hbotoes();
         }
         private void btnFuncionario_Click_1(object sender, EventArgs e)
         {
@@ -194,7 +194,7 @@ namespace BOOkStoreShell
         private void button1_Click(object sender, EventArgs e)
         {
             //nao sei pq nao muda o nome mas é o btn pesquisar
-            this.Pesquisar_Livro();
+            Pesquisar_Livro();
 
         }
 
@@ -218,16 +218,16 @@ namespace BOOkStoreShell
 
                             if (RestoreBounds.Equals("Ok"))
                             {
-                                this.MensagemOk("Registro Excluido");
+                                MensagemOk("Registro Excluido");
                             }
                             else
                             {
-                                this.MensagemErro(Resp);
+                                MensagemErro(Resp);
                             }
 
                         }
                     }
-                    this.Mostrar();
+                    Mostrar();
                 }
             }
             catch (Exception ex)
@@ -238,7 +238,7 @@ namespace BOOkStoreShell
 
         private void txtPesquisar_TextChanged(object sender, EventArgs e)
         {
-            this.Pesquisar_Livro();
+            Pesquisar_Livro();
         }
 
         private void dataGridViewEstoque_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -270,13 +270,13 @@ namespace BOOkStoreShell
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            this.eNovo = true;
-            this.eEditar = false;
-            this.Hbotoes();
-            this.Limpar();
-            this.Habilitar(true);
-            this.txtTitulo.Focus();
-            this.txtIdLivro.Enabled = false;
+            eNovo = true;
+            eEditar = false;
+            Hbotoes();
+            Limpar();
+            Habilitar(true);
+            txtTitulo.Focus();
+            txtIdLivro.Enabled = false;
       }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -284,14 +284,14 @@ namespace BOOkStoreShell
             try
             {
                 string resp = "";
-                if (this.txtTitulo.Text == string.Empty)
+                if (txtTitulo.Text == string.Empty)
                 {
                     MensagemErro("Preencha todos os campos");
                     errorIcone.SetError(txtTitulo, "Insira o titulo");
                 }
                 else
                 {
-                    if (this.eNovo)
+                    if (eNovo)
                     {
                         int genero;
                         int qtdEstoque;
@@ -301,7 +301,7 @@ namespace BOOkStoreShell
                         qtdEstoque = Convert.ToInt32(txtNumeroEstoque.Text);
                         preco = float.Parse(txtPreco.Text);
 
-                        resp = Controller.ControllerLivro.cAdd_Livro(this.txtTitulo.Text.Trim(),genero,qtdEstoque,preco);
+                        resp = Controller.ControllerLivro.cAdd_Livro(txtTitulo.Text.Trim(),genero,qtdEstoque,preco);
                     }
                     else
                     {
@@ -313,29 +313,29 @@ namespace BOOkStoreShell
                         genero = Convert.ToInt32(txtGenero.Text);
                         qtdEstoque = Convert.ToInt32(txtNumeroEstoque.Text);
                         preco = float.Parse(txtPreco.Text);
-                        idLivro =Convert.ToInt32(this.txtIdLivro.Text);
-                        resp = Controller.ControllerLivro.cEditar_Livro(idLivro,this.txtTitulo.Text.Trim(), genero, qtdEstoque, preco);
+                        idLivro =Convert.ToInt32(txtIdLivro.Text);
+                        resp = Controller.ControllerLivro.cEditar_Livro(idLivro,txtTitulo.Text.Trim(), genero, qtdEstoque, preco);
                     }
                     if (resp.Equals("Ok"))
                     {
-                        if (this.eNovo)
+                        if (eNovo)
                         {
-                            this.MensagemOk("LIVRO SALVO COM SUCESSO");
+                            MensagemOk("LIVRO SALVO COM SUCESSO");
                         }
                         else
                         {
-                            this.MensagemOk("LIVRO EDITADO COM SUCESSO");
+                            MensagemOk("LIVRO EDITADO COM SUCESSO");
                         }
                     }
                     else
                     {
-                        this.MensagemErro(resp);
+                        MensagemErro(resp);
                     }
-                    this.eNovo = false;
-                    this.eEditar = false;
-                    this.Hbotoes();
-                    this.Limpar();
-                    this.Mostrar();
+                    eNovo = false;
+                    eEditar = false;
+                    Hbotoes();
+                    Limpar();
+                    Mostrar();
 
                 }
             }
@@ -347,37 +347,37 @@ namespace BOOkStoreShell
 
         private void dataLista_DoubleClick(object sender, EventArgs e)
         {
-            this.txtIdLivro.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["idLivro"].Value);
-            this.txtTitulo.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["titulo"].Value);
-            this.txtPreco.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["precoLivro"].Value);
-            this.txtNumeroEstoque.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["estoqueLivro"].Value);
-            this.txtGenero.Text = Convert.ToString(this.dataLista.CurrentRow.Cells["idGenero"].Value);
+            txtIdLivro.Text = Convert.ToString(dataLista.CurrentRow.Cells["idLivro"].Value);
+            txtTitulo.Text = Convert.ToString(dataLista.CurrentRow.Cells["titulo"].Value);
+            txtPreco.Text = Convert.ToString(dataLista.CurrentRow.Cells["precoLivro"].Value);
+            txtNumeroEstoque.Text = Convert.ToString(dataLista.CurrentRow.Cells["estoqueLivro"].Value);
+            txtGenero.Text = Convert.ToString(dataLista.CurrentRow.Cells["idGenero"].Value);
 
-            this.tabControl1.SelectedIndex = 1;
+            tabControl1.SelectedIndex = 1;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (this.txtIdLivro.Text.Equals(""))
+            if (txtIdLivro.Text.Equals(""))
             {
-                this.MensagemErro("Clique 2 vezes em algum item na lista para editar.");
+                MensagemErro("Clique 2 vezes em algum item na lista para editar.");
             }
             else
             {
-                this.eEditar = true;
-                this.Hbotoes();
-                this.Habilitar(true);
+                eEditar = true;
+                Hbotoes();
+                Habilitar(true);
             }
         }
 
         private void chkDeletar_CheckedChanged(object sender, EventArgs e)
         {
             if(chkDeletar.Checked) {
-                this.dataLista.Columns[0].Visible = true;
+                dataLista.Columns[0].Visible = true;
             }
             else
             {
-                this.dataLista.Columns[0].Visible = false;
+                dataLista.Columns[0].Visible = false;
             }
         }
 
@@ -388,9 +388,17 @@ namespace BOOkStoreShell
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             Limpar();
             eEditar = true;
             
+=======
+            eNovo = false;
+            eEditar = false;
+            Hbotoes();
+            Limpar();
+            Mostrar();
+>>>>>>> Stashed changes
         }
     }
 

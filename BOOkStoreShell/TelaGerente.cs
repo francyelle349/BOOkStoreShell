@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static Controller.ControllerPedidos;
 
 namespace BOOkStoreShell
 {
@@ -13,38 +14,11 @@ namespace BOOkStoreShell
 
         }
 
-        private void SomarPedido()
-        {
-            string connectionString = "Data Source=DESKTOP-JMUCA02;Initial Catalog=bookstore;Integrated Security=true";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                string query = "SELECT SUM(valorTotalPedido) FROM Pedido;";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                   
-                    object result = command.ExecuteScalar();
-
-                    if (result != DBNull.Value)
-                    {
-                        decimal total = Convert.ToDecimal(result);
-                        lblDinheiroVendas.Text = total.ToString("C");
-                    }
-                    else
-                    {
-                        lblDinheiroVendas.Text = "Não há registros.";
-                    }
-                }
-            }
-        }
         private void Mostrar()
         {
-            this.dataGridViewVendas.DataSource = Controller.ControllerPedidos.Exibir_Pedido();
+            this.dataGridViewVendas.DataSource = Exibir_Pedido();
             lblQtdVendas.Text = Convert.ToString(dataGridViewVendas.Rows.Count);
-            SomarPedido();
+            lblDinheiroVendas.Text = SomarPedido();
 
 
         }

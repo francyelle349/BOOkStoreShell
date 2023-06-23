@@ -13,7 +13,7 @@ namespace Model
         //conexao
         //Sql conexao = new sql(@serve...)
 
-        public static string cn = "Data Source=DESKTOP-JMUCA02;Initial Catalog=bookstore;Integrated Security=True;";
+        public static string cn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\64609-gabriel\\Documents\\BOOkStore\\Model\\Database1.mdf;Integrated Security=True";
 
 
     }

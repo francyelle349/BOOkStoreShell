@@ -6,6 +6,7 @@ namespace BOOkStoreShell
 {
     public partial class LoginGerente : Form
     {
+        private string senhagerente = "gatinho123";
         public LoginGerente()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace BOOkStoreShell
         private void btnLoginGerente_Click(object sender, EventArgs e)
         {
             
-            if(txtSenhaGerente.Text.GetHashCode() ==  "gatinho123".GetHashCode())
+            if(txtSenhaGerente.Text.GetHashCode() ==  senhagerente.GetHashCode())
             {
                 this.Hide();
                 TelaGerente frm = new TelaGerente();

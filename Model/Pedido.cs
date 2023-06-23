@@ -62,6 +62,30 @@ namespace Model
 
         }
 
+        public static string getTotalVendas()
+        {
+            string totalvendas;
+            using (SqlConnection connection = new SqlConnection(BD.cn))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("SELECT SUM(valorTotalPedido) FROM Pedido;", connection))
+                {
+                    object result = command.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        decimal total = Convert.ToDecimal(result);
+                        totalvendas = total.ToString("C");
+                    }
+                    else
+                    {
+                        totalvendas = "Não há registros.";
+                    }
+                }
+            }
+            return totalvendas;
+        }
+
 
     }
 }
