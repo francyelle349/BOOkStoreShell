@@ -32,16 +32,23 @@ namespace BOOkStoreShell
         {
             try
             {
-                if (loginCliente(txtEmailCliente.Text, txtSenhaCliente.Text) == true)
+                if (txtEmailCliente.Text == "" || txtSenhaCliente.Text == "")
                 {
-                    this.Hide();
-                    MessageBox.Show(Cliente.idCliente + " - Logado com sucesso", "", MessageBoxButtons.OK);
-                    TelaMenuCliente frm = new TelaMenuCliente();
-                    frm.Show();
+                    MessageBox.Show("Preencha todos os campos obrigatórios", "", MessageBoxButtons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Login ou senha invalidos", "Erro ao conectar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (loginCliente(txtEmailCliente.Text, txtSenhaCliente.Text))
+                    {
+                        this.Hide();
+                        MessageBox.Show(Cliente.idCliente + " - Logado com sucesso", "", MessageBoxButtons.OK);
+                        TelaMenuCliente frm = new TelaMenuCliente();
+                        frm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login ou senha invalidos", "Erro ao conectar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             } catch (Exception ex)
             {

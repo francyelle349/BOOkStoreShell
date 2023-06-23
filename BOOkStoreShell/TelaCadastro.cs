@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-using Controller;
+using static Controller.ControllerCliente;
 
 namespace BOOkStoreShell
 {
@@ -59,7 +59,7 @@ namespace BOOkStoreShell
                 } 
                 else
                 {
-                    new ControllerCliente().CadastrarCliente(txtNomeCliente.Text, txtEmailCliente.Text, txtCPFCliente.Text, txtTelefoneCliente.Text, txtSenhaCliente.Text);
+                    CadastrarCliente(txtNomeCliente.Text, txtEmailCliente.Text, txtCPFCliente.Text, txtTelefoneCliente.Text, txtSenhaCliente.Text);
                     MessageBox.Show("Cadastro realizado com sucesso!", "", MessageBoxButtons.OK);
                 }
             } catch (SqlException ex)

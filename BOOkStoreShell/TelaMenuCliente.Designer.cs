@@ -42,6 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQtdCompra = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.lblNumeroEstoque = new System.Windows.Forms.Label();
             this.txtNumeroEstoque = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlCliente.SuspendLayout();
             this.Vitrine.SuspendLayout();
@@ -232,6 +232,16 @@
             this.label4.Text = "Quantidade da Compra:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
+            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 97;
+            this.pictureBox2.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -266,6 +276,7 @@
             this.txtIdLivro.Name = "txtIdLivro";
             this.txtIdLivro.Size = new System.Drawing.Size(92, 22);
             this.txtIdLivro.TabIndex = 93;
+            this.txtIdLivro.Visible = false;
             // 
             // label2
             // 
@@ -277,6 +288,7 @@
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 92;
             this.label2.Text = "Id Livro:";
+            this.label2.Visible = false;
             // 
             // btnCancelar
             // 
@@ -358,16 +370,6 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(376, 22);
             this.txtTitulo.TabIndex = 80;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
-            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 97;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 

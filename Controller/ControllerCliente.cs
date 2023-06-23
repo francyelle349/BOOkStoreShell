@@ -24,7 +24,7 @@ namespace Controller
             }
         }
   
-        public void CadastrarCliente(string nomeCliente, string emailCliente, string cpfCliente, string telCliente, string senhaCliente)
+        public static void CadastrarCliente(string nomeCliente, string emailCliente, string cpfCliente, string telCliente, string senhaCliente)
         {
             try
             {
