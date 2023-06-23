@@ -41,7 +41,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtQtdCompra = new System.Windows.Forms.TextBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
@@ -55,7 +54,10 @@
             this.lblNumeroEstoque = new System.Windows.Forms.Label();
             this.txtNumeroEstoque = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtboxCpf = new System.Windows.Forms.TextBox();
             this.tabControlCliente.SuspendLayout();
             this.Vitrine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListaEstoque)).BeginInit();
@@ -177,6 +179,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtboxCpf);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.pictureBox2);
@@ -216,19 +220,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(29, 262);
+            this.label4.Location = new System.Drawing.Point(27, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(282, 29);
             this.label4.TabIndex = 98;
             this.label4.Text = "Quantidade da Compra:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
-            this.pictureBox2.TabIndex = 97;
-            this.pictureBox2.TabStop = false;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -357,6 +354,16 @@
             this.txtTitulo.Size = new System.Drawing.Size(376, 22);
             this.txtTitulo.TabIndex = 80;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::View.Properties.Resources.ERo4;
+            this.pictureBox2.Location = new System.Drawing.Point(667, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(257, 187);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 97;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::View.Properties.Resources.TelaLogado;
@@ -366,6 +373,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label6.Location = new System.Drawing.Point(27, 313);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 29);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "Confirme seu cpf:";
+            // 
+            // txtboxCpf
+            // 
+            this.txtboxCpf.Location = new System.Drawing.Point(311, 313);
+            this.txtboxCpf.Name = "txtboxCpf";
+            this.txtboxCpf.Size = new System.Drawing.Size(159, 22);
+            this.txtboxCpf.TabIndex = 101;
             // 
             // TelaMenuCliente
             // 
@@ -423,5 +447,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtboxCpf;
+        private System.Windows.Forms.Label label6;
     }
 }

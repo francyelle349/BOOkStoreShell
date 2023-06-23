@@ -17,6 +17,7 @@ namespace BOOkStoreShell
            InitializeComponent();
 
         }
+      
 
         private void backgroundWorker1_DoWork(object sender, EventArgs e)
         {
@@ -40,9 +41,7 @@ namespace BOOkStoreShell
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             LoginCliente LoginCliente = new LoginCliente();
-
             LoginCliente.Show();
         }
 

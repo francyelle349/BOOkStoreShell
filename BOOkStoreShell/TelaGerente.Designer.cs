@@ -138,6 +138,8 @@
             // 
             // dataGridViewVendas
             // 
+            this.dataGridViewVendas.AllowUserToAddRows = false;
+            this.dataGridViewVendas.AllowUserToDeleteRows = false;
             this.dataGridViewVendas.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridViewVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVendas.Location = new System.Drawing.Point(586, 232);

@@ -1,14 +1,14 @@
-﻿using Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Data;
+using Model;
 
 namespace Controller
 {
+
     public class ControllerPedidos
     {
         public static DataTable Exibir_Pedido()
@@ -16,6 +16,9 @@ namespace Controller
             return new Pedido().Exibir_Pedidos();
         }
 
+
+      
+        /*
         public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
         {
             Pedido Obj = new Pedido();
@@ -36,7 +39,8 @@ namespace Controller
              * as
              * insert into Pedido set (cpfcliente,TotalCompra,DataPedido) 
              * values (@cpfcliente,@TotalCompra,@DataPedido)
-             */
-        }
+             
+        }*/
+
     }
 }

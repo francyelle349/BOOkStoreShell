@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+using Controller;
 namespace BOOkStoreShell
 {
     public partial class TelaMenuCliente : Form
@@ -12,12 +12,13 @@ namespace BOOkStoreShell
             InitializeComponent();
 
         }
-     
+
         private void Mostrar()
         {
             this.dataListaEstoque.DataSource = Controller.ControllerLivro.Exibir_Livro();
-           
+
         }
+
         private void Limpar()
         {
             this.txtIdLivro.Text = string.Empty;
@@ -52,7 +53,7 @@ namespace BOOkStoreShell
 
         private void btnCarrinho_Click(object sender, EventArgs e)
         {
-            
+
             this.Hide();
             TelaCarrinho frm = new TelaCarrinho();
 
@@ -149,19 +150,63 @@ namespace BOOkStoreShell
 
         private void txtQtdCompra_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnAddCarrinho_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(txtQtdCompra.Text) > Convert.ToInt32(txtNumeroEstoque.Text))
+            try
             {
-                MessageBox.Show("Limite do estoque ultrapassado ", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string resp = "";
+                if (this.txtQtdCompra.Text == string.Empty)
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                 
+                }
+                else
+                {
+ 
+                    string cpfCliente;
+                    int idLivro;
+                    string nomeLivro;
+                    int genero;
+                    int estoque;
+                    double precoUnitario;
+                    int qtdCompra;
+
+                    cpfCliente = txtboxCpf.Text;
+                    idLivro = Convert.ToInt32(txtIdLivro.Text);
+                    nomeLivro = txtTitulo.Text;
+                    genero = Convert.ToInt32(txtGenero.Text);
+                    estoque = Convert.ToInt32(txtNumeroEstoque.Text);
+                    precoUnitario = Convert.ToDouble(txtPreco.Text);
+                    qtdCompra = Convert.ToInt32(txtQtdCompra.Text);
+
+
+                    resp = Controller.ControllerCarrinho.InserirCarrinho(cpfCliente,idLivro, nomeLivro, genero, estoque, precoUnitario, qtdCompra);
+                    if (resp.Equals("Ok"))
+                    {
+                        MessageBox.Show("Adicionado ao seu carrinho");
+                    }
+                    else
+                    {
+                        MessageBox.Show(resp);
+                    }
+                   
+                    this.Limpar();
+                  
+
+                }
             }
-            else
+            catch (Exception ex)
             {
-                //logica de enviar função enviar para carrinho
+                MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
