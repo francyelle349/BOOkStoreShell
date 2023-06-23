@@ -13,7 +13,7 @@ namespace Model
         //conexao
         //Sql conexao = new sql(@serve...)
 
-        public static string cn = "Data Source=DESKTOP-JMUCA02;Initial Catalog=bookstore;";
+        public static string cn = "Data Source=DESKTOP-JMUCA02;Initial Catalog=bookstore;Integrated Security=true";
        
     }
 }

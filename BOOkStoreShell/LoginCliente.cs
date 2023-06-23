@@ -29,9 +29,9 @@ namespace BOOkStoreShell
 
         private void btnLoginCliente_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-                if (loginCliente(txtEmailCliente.Text, txtSenhaCliente.Text))
+            try
+            {
+                if (loginCliente(txtEmailCliente.Text, txtSenhaCliente.Text) == true)
                 {
                     this.Hide();
                     TelaMenuCliente frm = new TelaMenuCliente();
@@ -41,10 +41,10 @@ namespace BOOkStoreShell
                 {
                     MessageBox.Show("Login ou senha invalidos", "Erro ao conectar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            //} catch (Exception ex)
-            //{
-            //    //MessageBox.Show("Error ao fazer login, tente novamente" + "Codigo de erro:" + ex.Message, "Falha", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error ao fazer login, tente novamente" + "Codigo de erro:" + ex.Message, "Falha", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
 
