@@ -1,4 +1,4 @@
-*.mdf
+/Model/*.mdf
 /BOOkStoreShell/bin
 /BOOkStoreShell/obj
 /Model/bin
@@ -6,3 +6,5 @@
 /Controller/bin
 /Controller/obj
 /.vs
+/Model/Database1_log.ldf
+/Model/Database1.mdf

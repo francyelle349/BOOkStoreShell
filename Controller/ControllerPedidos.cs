@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Model;
+using System.Data.SqlClient;
 
 namespace Controller
 {
@@ -16,10 +17,16 @@ namespace Controller
             return new Pedido().Exibir_Pedidos();
         }
 
+        public static string SomarPedido()
+        {
+            return Pedido.getTotalVendas();
+        }
+
 
       
         
-        /*public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
+        /*
+        public static string Finalizar_Pedido(string cpfCliente, Double valorPedido, string dataPedido)
         {
             Pedido Obj = new Pedido();
             Obj.CpfCliente = cpfCliente;
